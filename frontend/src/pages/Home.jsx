@@ -1,6 +1,11 @@
 export default function HomePage() {
-  return <>
-    <h1>Home</h1>
+  return (
+  <div className="home-page">
+  <img src="your-image-url.jpg" alt="Description" className="left-image" />
+  <div className="content">
+    <h1>SoloSphere</h1>
     <p>Put something interesting here!</p>
-  </>;
+  </div>
+</div>
+  )
 }

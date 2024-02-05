@@ -44,7 +44,7 @@ export default function SiteHeadingAndNav() {
             <li><NavLink to='/gallery'>Gallery</NavLink></li>
           </ul>
         </div>
-        <a id='logo' href='/'>SoloSphere</a>
+        <a id='logo' href='/'>SOLISPHERE</a>
         <div className="right">
           <ul>
             <li><NavLink to='/shop'>Shop</NavLink></li>

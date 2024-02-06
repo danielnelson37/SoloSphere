@@ -7,7 +7,10 @@ const ProductCard = ({ product }) => {
       <img src={product.image} alt={product.name} />
       <div className="product-info">
         <h3 className = "product-name">{product.name}</h3>
+        <p className="product-date">{product.date}</p>
         <p className="product-price"> ${product.price}</p>
+        
+       
         <Link to={`/products/${product.id}`} className="product-description">View Details</Link>
       </div>
     </div>

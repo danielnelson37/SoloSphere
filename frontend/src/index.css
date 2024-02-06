@@ -11,7 +11,6 @@
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
-  /* background: linear-gradient(45deg, #495057, #6c757d, #adb5bd);; */
   overflow-x: hidden;/* Prevents horizontal scrollbars due to large gradients */
   background:
     linear-gradient(rgba(61, 66, 66, 0.189), transparent),
@@ -23,8 +22,8 @@ body {
 
 
 h1 {
-  font-size: 6em; /* Adjust the font size */
-  margin-bottom: 10px; /* Adjust margin as needed */
+  font-size: 11em; /* Adjust the font size */
+  margin-bottom: 20%; /* Adjust margin as needed */
 }
 
 input, label {
@@ -57,11 +56,6 @@ nav ul {
   margin: 0;
   list-style: none;
 }
-
-/* nav a {
-  display: block;
-  color: #FFF;
-} */
 
 form {
   padding: 1rem;
@@ -126,19 +120,19 @@ nav .right {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding:  5%; /* Add padding as needed */
+  /* Add padding as needed */
 }
 
 .left-image {
   width: 50%; /* Adjust the width of the image */
   max-width: 100%; /* Set a maximum width for responsiveness */
-  margin-right: 20px; /* Adjust margin as needed */
   border-radius: 8px;
+  margin-top: 2%;
 }
 
 .content {
  position: absolute;
- top: 26%;
+ top: 36%;
  left: 50%;
  transform: translate(-50%, -50%);
 
@@ -147,9 +141,9 @@ nav .right {
 .tagline{
   text-align: right;
   position: relative;
-  right: 16%;
-  top: -10px;
-  font-size: 18px;
+  right: 13%;
+  top: -190px;
+  font-size: 40px;
   font-weight: 500;
   
 }
@@ -158,15 +152,13 @@ h1 span::before {
   content: ''; /* Empty content */
   position: absolute;
   display: block;
-  width: 290px; /* Adjust the width of the circle */
-  height: 290px; /* Adjust the height of the circle */
+  width: 590px; /* Adjust the width of the circle */
+  height: 590px; /* Adjust the height of the circle */
   border-radius: 50%; /* Create a circular shape */
-  top: -10px; /* Adjust the vertical position */
+  top: -17px; /* Adjust the vertical position */
   left: 68%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust to center precisely */
   z-index: -1; /* Place behind the text */
-
-/* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
@@ -179,35 +171,75 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   flex-direction: row; /* Arrange items in a row */
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px; /* Add margin as needed */
+  margin-top: 5%; /* Add margin as needed */
 }
 
 .rotate-text {
-  font-size: 40px;
+  font-size: 60px;
+  max-width: 100%;
   writing-mode: vertical-lr; /* Rotate text vertically from left to right */
-  transform: translate(-50%, -50%) rotate(-180deg); /* Additional rotation for browser compatibility */
-  position: absolute;
-  top: 67%;
-  left: 5%; /* Adjust the left position as needed */
+  transform: rotate(-180deg); /* Additional rotation for browser compatibility */
   color: white; /* Adjust the color as needed */
+ 
 }
 
 .featured-art-content .mini-gallery{
-  display:flex;
+  /* display:flex;
   align-items: center;
   justify-content: space-between; 
-  margin: 20px 0;
+  margin: 20px 0; */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Set position relative for absolute positioning of buttons */
 }
 
 .featured-art-content .mini-gallery button{
   background: none;
-  border: nonen;
+  border: none;
   font-size: 1.2em;
   cursor: pointer;
+  position: absolute; /* Set position absolute for overlaying */
+  top: 50%; /* Position vertically in the middle */
+  transform: translateY(-50%); /* Adjust to center precisely */
+  color: white; /* Adjust the color as needed */
+}
+
+.featured-art-content .mini-gallery button.prev {
+  left: 10%; /* Position the "Prev" button on the left */
+}
+
+.featured-art-content .mini-gallery button.next {
+  right: 10%; /* Position the "Next" button on the right */
 }
 
 .featured-art-content .mini-gallery img{
   width: 300px;
   height: auto;
   border-radius: 8px;
+}
+
+.detailed-bio h2 {
+  position: relative;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.detailed-bio h2::after {
+  content: '';
+  margin-bottom: -2%;
+  position: absolute;
+  width: 57%;
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: white; /* Set the color of the line */
+  bottom: 0; 
+  left: 5%; 
+}
+
+.detailed-bio p {
+  text-align: left;
+  padding-top: 2%;
+  padding-left: 5%; 
+  padding-right: 5%;
 }

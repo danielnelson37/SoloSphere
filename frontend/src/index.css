@@ -1,12 +1,12 @@
 
-@font-face {
+/* @font-face {
   font-family: 'skratch_punkregular';
   src: url('/fonts/skratch_punk-webfont.woff2') format('woff2'),
        url('/fonts/skratch_punk-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
-}
+} */
 
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -18,10 +18,7 @@ body {
     linear-gradient(to top right, rgb(155, 155, 155), transparent);
   background-blend-mode: screen;
   background-size: 100%;  
-} 
-
-
-
+}
 
 input, label {
   display: block;
@@ -75,24 +72,8 @@ nav {
   width: 100%;
 }
 
-nav .left ul,
-nav .right ul {
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 nav a {
   display: block;
-  color: #FFF;
-}
-
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
   color: #FFF;
 }
 
@@ -245,7 +226,66 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 5%; 
   padding-right: 5%;
 }
+
+
 /* Shop Page css*/
+.product-list-container {
+  width: 100%;
+}
+/*  Search & filter css*/
+.filter-search-row {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  
+}
+
+ .search-bar{
+  flex: .8;
+  max-width: 100%; 
+} 
+
+.search-bar-input {
+  /* Add your search bar styling here */
+ width: 85%;
+ height: 40px;
+ background: white;
+ border-radius: 30px;
+ border: none;
+}
+
+.filter-button {
+  /* Add your button styling here */
+  position: relative;
+  right: 5.5%;
+  margin-right: 30%;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters {
+  position: absolute;
+  top: 190px;
+  left: 48%;
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+
+}
+
+select {
+  border-radius: 8px;
+}
 
 /* ProductCard.css */
 
@@ -289,6 +329,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .product-list {
   display: flex;
   flex-wrap: wrap;
-
-   /* Adjust as needed */
+  justify-content: space-evenly;/* Adjust as needed */
+  margin-left: 2%;
 }

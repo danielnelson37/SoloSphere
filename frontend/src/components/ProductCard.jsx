@@ -5,9 +5,11 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
       <img src={product.image} alt={product.name} />
-      <h3>product name: {product.name}</h3>
-      <p>Product price: ${product.price}</p>
-      <Link to={`/products/${product.id}`}>View Details</Link>
+      <div className="product-info">
+        <h3 className = "product-name">{product.name}</h3>
+        <p className="product-price"> ${product.price}</p>
+        <Link to={`/products/${product.id}`} className="product-description">View Details</Link>
+      </div>
     </div>
   );
 };

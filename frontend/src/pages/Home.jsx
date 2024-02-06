@@ -21,9 +21,9 @@ const handlePrevImage = () => {
 
 return (
   <div className="home-page">
-  <img src="images/IMG_0747.JPG" alt="Description" className="left-image" />
+  <img src="images/IMG_0747.JPG" alt="Description" className="landingpage-image" />
   <div className="content">
-    <h1><span>SOLI</span>SPHERE</h1>
+    <h1 className="landingpage-title"><span>SOLI</span>SPHERE</h1>
     <p className="tagline">Illuminating Shadows</p>
   </div>
   <div className="featured-art-content">

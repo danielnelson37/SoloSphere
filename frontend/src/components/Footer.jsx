@@ -33,8 +33,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-row">
-                <div className="contact-information">
-                    <h3>SOLISPHERE</h3>
+                <div className="logo-information">
+                    <h2>SOLISPHERE</h2>
                 </div>
 
                 <div className="navigation-links">
@@ -77,7 +77,6 @@ const Footer = () => {
                     <p>&copy; {currentYear} SOLISPHERE</p>
                 </div>
             </div>
-
 
         </footer>
     );

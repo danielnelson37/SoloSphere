@@ -337,12 +337,20 @@ select {
 /* Footer css*/
 .footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   padding: 20px; /* Adjust padding as needed */
   background-color: #333; /* Change background color as needed */
   color: white; /* Change text color as needed */
 }
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 
 .footer div {
   width: 200px; /* Adjust width as needed */
@@ -370,4 +378,8 @@ select {
 .footer a {
   color: white; /* Change link color as needed */
   text-decoration: none;
+}
+
+footer .footer-row:first-child {
+  flex-direction: row;
 }

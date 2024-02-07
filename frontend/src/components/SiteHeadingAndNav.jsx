@@ -5,28 +5,6 @@ import CurrentUserContext from "../contexts/current-user-context";
 export default function SiteHeadingAndNav() {
   const { currentUser } = useContext(CurrentUserContext);
 
-  // return <header>
-  //   <a id='logo' href='/'>SoloSphere</a>
-  //   <nav>
-  //     <ul>
-  //       <li><NavLink to='/'>Home</NavLink></li>
-  //       <li><NavLink to='/users' end={true}>Users</NavLink></li>
-  //       {
-  //         currentUser
-  //           ? <li><NavLink to={`/users/${currentUser.id}`}>{currentUser.username}</NavLink></li>
-  //           : <>
-  //             <li><NavLink to='/login'>Login</NavLink></li>
-  //             <li><NavLink to='/sign-up'>Sign Up</NavLink></li>
-  //           </>
-  //       }
-  //       <li><NavLink>Gallery</NavLink></li>
-  //       <li><NavLink>Shop</NavLink></li>
-  //       <li><NavLink>About</NavLink> </li>
-  //       <li><NavLink>Contact</NavLink> </li>
-  //       <li><NavLink>FAQs</NavLink> </li>
-  //     </ul>
-  //   </nav>
-  // </header>;
   return (
     <header>
       <nav>

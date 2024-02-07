@@ -333,3 +333,41 @@ select {
   justify-content: space-evenly;/* Adjust as needed */
   margin-left: 2%;
 }
+
+/* Footer css*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #333; /* Change background color as needed */
+  color: white; /* Change text color as needed */
+}
+
+.footer div {
+  width: 200px; /* Adjust width as needed */
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.footer h3 {
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.footer p {
+  margin: 5px 0; /* Adjust margin as needed */
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.footer a {
+  color: white; /* Change link color as needed */
+  text-decoration: none;
+}

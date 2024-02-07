@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+      // Show or hide the back-to-top button based on scroll position
+      const handleScroll = () => {
+        setShowButton(window.scrollY > 300);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      // Remove the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Add smooth scrolling behavior
+      });
+    };
 
     return (
         <footer className="footer">
@@ -41,7 +64,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className="back-to-top-button">
+            <div div className="back-to-top-button" onClick={scrollToTop}>
                 <h3>Back to Top Button</h3>
                 {/*add back to top button*/}
             </div>

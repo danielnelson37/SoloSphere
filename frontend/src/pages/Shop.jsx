@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductList from '../components/ProductList'; // Import your ProductList component
 import products from '../productsData'; // Adjust the path accordingly

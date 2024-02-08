@@ -294,6 +294,7 @@ select {
 .product-card {
   display: flex;
   max-width: calc(20% - 10px);
+  max-height:auto;
   flex-direction: column;
   border: 1px solid #ddd; /* Add a border for separation */
   border-radius: 8px; /* Add some border radius for a softer look */
@@ -303,7 +304,12 @@ select {
 
 .product-image {
   width: 100%; /* Set the width of the image */
-  max-height: 10px; /* Maintain the aspect ratio of the image */
+  max-height: auto; /* Maintain the aspect ratio of the image */
+  object-fit: cover;
+}
+
+.product-card a {
+  text-decoration: none;
 }
 
 .product-info {
@@ -314,18 +320,28 @@ select {
 .product-name {
   font-size: 1.5rem; /* Set the font size for the product name */
   margin-bottom: 10px; /* Add margin between product name and description */
+  text-decoration: none;
+  color: #333; /* Set a color for the product name */
+}
+
+.product-date {
+  color: #333; /* Set a color for the product name */
 }
 
 .product-description {
   font-size: 1rem; /* Set the font size for the description */
   color: #555; /* Set a subdued color for the description */
   margin-bottom: 10px; /* Add margin between description and price */
+  text-decoration: none;
+
 }
 
 .product-price {
   font-size: 1.2rem; /* Set the font size for the price */
   font-weight: bold; /* Make the price bold for emphasis */
   color: #333; /* Set a darker color for the price */
+  text-decoration: none;
+
 }
 
 .product-list {

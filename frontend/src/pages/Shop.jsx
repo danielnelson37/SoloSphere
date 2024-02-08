@@ -7,7 +7,6 @@ const Shop = () => {
 
   return (
     <div className="shop">
-      <h1>Our Products</h1>
       <ProductList products={products} />
     </div>
   );

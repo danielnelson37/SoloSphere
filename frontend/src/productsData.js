@@ -332,6 +332,46 @@ const products = [
         dimensions: '36x18in',
         description: 'An exquisite sculpture to adorn your living space.',
       },
+
+      {
+        id: 29,
+        name: 'Sacred Heartz',
+        date: 2023,
+        collection: '',
+        price: 5000,
+        image: '/images/sacred.JPG',
+        media: 'photography and digital print',
+        dimensions: '48x18in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 30,
+        name: 'Subterranean Voyage',
+        date: 2023,
+        collection: '',
+        price: 5000,
+        image: 'images/sub.JPG',
+        media: 'photography and digital print',
+        dimensions: '36x18in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 31,
+        name: 'Chromed: SUDO RM -RF',
+        date: 2023,
+        collection: '',
+        price: 5000,
+        image: 'images/chromed.JPG',
+        altImages: ['images/chromedgreen.jpg', 'images/chromedred.jpg'],
+        media: 'photography and digital print',
+        dimensions: '36x18in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      }
+      
+
+
   ];
   
   export default products;

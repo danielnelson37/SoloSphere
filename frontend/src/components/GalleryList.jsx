@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import GalleryCard from './GalleryCard';
 import SearchBar from './SearchBar';
-import FilterSection from './FilterSection'; // You can reuse this if needed
+import GalleryFilterSection from './GalleryFilterSection'; // You can reuse this if needed
 import products from '../productsData';
 
 const GalleryList = () => {
@@ -36,8 +36,9 @@ const GalleryList = () => {
   return (
     <div className="gallery-list-container">
       <div className="filter-search-row">
+      <h1 className="gallery-title">GALLERY</h1>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <FilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} />
+        <GalleryFilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} />
       </div>
 
       <div className="gallery-list">

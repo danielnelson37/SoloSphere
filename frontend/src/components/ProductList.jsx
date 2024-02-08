@@ -40,6 +40,7 @@ const ProductList = () => {
   return (
     <div className="product-list-container">
       <div className="filter-search-row">
+        <h1 className="shop-title">SHOP</h1>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         <FilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} />
       </div>

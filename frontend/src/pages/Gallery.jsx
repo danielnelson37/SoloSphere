@@ -7,7 +7,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      <h1>Our Products</h1>
+      
       <GalleryList products={products} />
     </div>
   );

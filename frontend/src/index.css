@@ -20,6 +20,8 @@ body {
   background-size: 100%;  
 }
 
+
+
 input, label {
   display: block;
 }
@@ -60,7 +62,7 @@ form {
 
 /* automatically added by NavLink component */
 .active {
-  color: #EEBC32;
+  color: #F05941;
   font-weight: bold;
   font-style: italic;
 }
@@ -202,12 +204,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   width: 300px;
   height: auto;
   border-radius: 8px;
+  
 }
 
 .detailed-bio h2 {
   position: relative;
   text-align: left;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .detailed-bio h2::after {
@@ -215,8 +218,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: -2%;
   position: absolute;
   width: 57%;
-  height: 2px; /* Adjust the height of the line as needed */
-  background-color: white; /* Set the color of the line */
+  
   bottom: 0; 
   left: 5%; 
 }
@@ -224,8 +226,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .detailed-bio p {
   text-align: left;
   padding-top: 2%;
-  padding-left: 5%; 
-  padding-right: 5%;
+  padding-left: 2%; 
+  padding-right: 15%;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  margin-left: 10%;
 }
 
 
@@ -237,20 +242,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .filter-search-row {
   max-width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 2%;
+
   
 }
 
+
  .search-bar{
-  flex: .8;
+  flex: 1;
   max-width: 100%; 
+  margin-top: 1%;
+
 } 
 
 .search-bar-input {
   /* Add your search bar styling here */
  width: 85%;
- height: 40px;
+ height:40px;
+ padding-left: 2%;
  background: white;
  border-radius: 30px;
  border: none;
@@ -259,11 +269,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .filter-button {
   /* Add your button styling here */
   position: relative;
-  right: 5.5%;
-  margin-right: 30%;
-  background-color: #ff2c21;
+  right: 170%;
+  
+  background-color: #22092C;
   color: #ffffff;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -271,8 +281,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .filters {
   position: absolute;
-  top: 190px;
-  left: 48%;
+  top: 19%;
+  right: 3%;
   max-width: 40%;
   padding: 10px;
   border-radius: 8px;
@@ -290,6 +300,10 @@ select {
 }
 
 /* Gallery.css */
+.gallery-title {
+  font-size: 45px;
+  margin: 2%;
+}
 
 .gallery-card {
   display: flex;
@@ -309,6 +323,7 @@ select {
 }
 
 .gallery-card a {
+
   text-decoration: none;
 }
 
@@ -342,10 +357,18 @@ select {
   flex-wrap: wrap;
   justify-content: space-evenly;/* Adjust as needed */
   margin-left: 2%;
+  padding-top: 2%;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
 }
 
 
 /* ProductCard.css */
+
+.shop-title{
+  font-size: 45px;
+  margin: 2%;
+}
 
 .product-card {
   display: flex;
@@ -405,8 +428,10 @@ select {
   flex-wrap: wrap;
   justify-content: space-evenly;/* Adjust as needed */
   margin-left: 2%;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  padding-top: 2%;
 }
-
 /* Footer css*/
 .footer {
   display: flex;

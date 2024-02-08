@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import SignUpPage from './pages/SignUp';
 import LoginPage from './pages/Login';
 import ShopPage from './pages/Shop';
+import GalleryPage from './pages/Gallery';
 import SiteHeadingAndNav from './components/SiteHeadingAndNav';
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFound';
@@ -13,6 +14,7 @@ import { checkForLoggedInUser } from './adapters/auth-adapter';
 import UsersPage from './pages/Users';
 import UserPage from './pages/User';
 import ProductDetails from './components/ProductDetails'; // Import the new component
+import GalleryItemDetail from './components/GalleryItemDetails';
 
 export default function App() {
   const { setCurrentUser } = useContext(UserContext);
@@ -33,6 +35,8 @@ export default function App() {
           <Route path="/users/:id" element={<UserPage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/gallery/:id" element={<GalleryItemDetail />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

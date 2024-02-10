@@ -60,7 +60,7 @@ import SearchBar from './SearchBar';
 import GalleryFilterSection from './GalleryFilterSection';
 import products from '../productsData';
 
-const itemsPerPage = 6; // Number of items to display per page
+const itemsPerPage = 12; // Number of items to display per page
 
 const GalleryList = () => {
   const [filters, setFilters] = useState({

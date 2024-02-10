@@ -23,17 +23,17 @@ const GalleryCard = ({ product }) => {
     //   };
   return (
     <div className="gallery-card">
-      <img src={product.image} alt={product.name} />
+    <Link to={`/gallery/${product.id}`}>
+    <img src={product.image[0]} alt={product.name} className="gallery-image" />
       <div className="gallery-info">
         <h3 className="gallery-name">{product.name}</h3>
         <h3 className="gallery-date">{product.date}</h3>
         {/* Additional details if needed */}
-        <Link to={`/gallery/${product.id}`} className="gallery-description">View Details</Link>
         <div className="post-bookmarks">
         <FontAwesomeIcon icon={faBookmark} />
-        </div>
-
       </div>
+      </div>
+      </Link>
     </div>
   );
 };

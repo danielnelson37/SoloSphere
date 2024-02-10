@@ -305,6 +305,7 @@ select {
   margin: 2%;
 }
 
+/* GalleryCard.css*/
 .gallery-card {
   display: flex;
   max-width: calc(20% - 10px);
@@ -317,13 +318,12 @@ select {
 }
 
 .gallery-image {
-  width: 100%; /* Set the width of the image */
+  max-width: 100%; /* Set the width of the image */
   max-height: auto; /* Maintain the aspect ratio of the image */
   object-fit: cover;
 }
 
 .gallery-card a {
-
   text-decoration: none;
 }
 
@@ -341,14 +341,7 @@ select {
 
 .gallery-date {
   color: #333; /* Set a color for the product name */
-}
-
-.gallery-description {
-  font-size: 1rem; /* Set the font size for the description */
-  color: #555; /* Set a subdued color for the description */
-  margin-bottom: 10px; /* Add margin between description and price */
-  text-decoration: none;
-
+  font-size: 1.5rem;
 }
 
 
@@ -360,6 +353,86 @@ select {
   padding-top: 2%;
   border-left: 2px solid white;
   border-top: 2px solid white;
+}
+
+/* GalleryItemDetail.css*/
+.gallery-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 2% auto;
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.back-button {
+  max-width: 25%;
+  padding: 1.5% 1%;
+  margin: 2% 5%;
+  color: white;
+  border-radius: 10px;
+  background-color: #22092C;
+  font-size: 14px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+}
+
+.details-section {
+  display: flex; 
+  margin: 0 auto;
+  margin-left: 5%;
+}
+
+.details-title{
+  align-items: start;
+  margin: auto;
+  max-width: 25%;
+  
+}
+
+.image-section {  
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 50%; /* Adjust the max-width to scale the image down */
+  max-height: 10%; /* Adjust the max-height to scale the image down */
+  object-fit: cover; /* Use contain to maintain aspect ratio */
+  margin: 0 auto;  
+}
+
+.image-navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.gallery-bio {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+  margin-bottom: 2%;
+}
+
+.post-bookmarks {
+  color:#22092C;
+}
+
+.post-bookmarks:hover{
+  color:#F05941;
 }
 
 
@@ -432,6 +505,10 @@ select {
   border-top: 2px solid white;
   padding-top: 2%;
 }
+
+/* ProductDetails.css */
+
+
 /* Footer css*/
 .footer {
   display: flex;

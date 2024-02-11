@@ -9,15 +9,15 @@ const products = [
       image: ['/images/endscene.jpg'],
       media: 'Graphite and marker on paper, digital collage',
       dimensions: "3x3ft",
-      description: 'A beautiful abstract painting for your art collection.',
+      description: 'A piece part of the “Black Dog” series using the motif of the black dog to illustrate the absurdity of the loyalty of suffering in life.',
     },
     {
       id: 2,
       name: 'When the soul breaks through the confines of its mortal frame',
       date: 2021,
       collection: '',
-      price: 2000,
-      image: ['/images/nihilist.jpg'],
+      price: 12000,
+      image: ['/images/nihilist.jpg', '/images/nihilist-1.jpg', '/images/nihilistwarm.jpg'],
       media: 'Graphite, acrylic, marker on paper, digital collage',
       dimensions: "24x18in",
       description: 'This artwork depicts contrasting versions of myself, with the older self situated in a taxi\'s passenger seat while the younger self occupies the backseat. The scene captures the tension between these two personas, as the older self, symbolizing the mortal frame tied to the physical realm, faces the younger self brandishing a silencer. The aging appearance of the older self serves as a poignant reminder of the inherent limitations in our existence, while the younger self embodies the intellectual aspect of the soul, fervently seeking to transcend the boundaries of the physical world and empirical knowledge, even at the cost of confronting its own limitations.',
@@ -44,7 +44,7 @@ const products = [
         image: ['/images/absurdist.jpg'],
         media: 'Oil on canvas, digital collage',
         dimensions: '2x3ft',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '“The Paradox of the Absurdist” is a collage painting regarding absurdism; the belief that human exist in a purposeless, chaotic world. With this knowledge one has the choice to rebel or embrace what life gives us.',
       },
       {
         id: 5,
@@ -55,7 +55,7 @@ const products = [
         image: ['/images/angel.JPG'],
         media: 'Graphite on paper, digital collage',
         dimensions: '30x40in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'A piece part of the “Black Dog” series using the motif of the black dog to illustrate the absurdity of the loyalty of suffering in life.',
       },
 
       {
@@ -67,7 +67,7 @@ const products = [
         image: ['/images/kirin.jpg'],
         media:'Graphic, charcoal and conte crayon on paper',
         dimensions: "18x24in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'A custom drawing made in traditional Japanese tattoo style that pays tribute to the Japanese mythological creature, the Kirin.',
       },
 
       {
@@ -91,7 +91,7 @@ const products = [
         image: ['/images/solo-1.JPG'],
         media: "Graphite, marker, acrylic on paper",
         dimensions: '6x6in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'This piece serves as a profound self-portrait reflecting my present state, employing bold lines to evoke a dark and somber atmosphere inspired by film noir aesthetics. Originating from a dream featuring a conversation with a figure reminiscent of Machiavelli, the piece delves into the dichotomy of being perceived as the \'good guy\' loved rather than feared. The dream\'s impact on my principles and character is encapsulated in the portrait, subtly alluding to Christianity and smoking as symbols of a cynical hero navigating the complexities of the world while staying true to personal principles, even acknowledging inherent flaws.',
       },
 
       {
@@ -115,7 +115,7 @@ const products = [
         image: ['/images/Amerikkka.jpg'],
         media: 'Oil, acrylic, aluminum foil on canvas, digital collage',
         dimensions: '2x3ft',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'This multimedia piece envisions a fictional intrusion, placing a KKK member in my living room, drawing inspiration from Faith Ringgold\’s The American People Series: Die and Picasso\’s Guernica. It serves as a critical exploration of America\'s unsettling fixation on racism, depicting the stagnant progress in addressing racial issues. Developed over nearly a year, the painting captures the escalating violence against the black community, highlighting the numbing impact of media coverage and the persistent lack of accountability for oppressors. Amid senseless bloodshed, the piece prompts reflection on the motivations behind such acts, suggesting the need for understanding to address the ongoing cycle of violence.',
       },
 
       {
@@ -151,7 +151,7 @@ const products = [
         image: ['/images/foresight.JPG'],
         media: 'Oil and digital collage',
         dimensions: '24x18in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'In "FORESIGHT," the portrayal of myself on a payphone surrounded by black witch moths and observed by the Whooping Boy on the Three Legged Horse delves into the interconnectedness of cultural monsters and the values embedded in Jamaican folklore. Examining entities like the duppies, specifically the Three Legged Horse with its deadly pursuit and the Whooping Boy riding it, reveals how these monsters embody societal fears and cultural warnings. Through the symbolism of the black witch moth, considered a harbinger of death, the narrative unfolds to explore the essence of fear and its transformative impact on desires, illustrating the profound connection between fear, powerlessness, and the pursuit of self-sufficiency.',
       },
 
       {
@@ -163,7 +163,7 @@ const products = [
         image: ['/images/godspeed.JPG'],
         media: 'Oil, acrylic, collage, charcoal, and fabric on canvas',
         dimensions: "18x24in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'The multimedia artwork portrays a tender moment between myself as a toddler and my father, drawing parallels between Western Americana Cowboy culture and my father\'s characteristics. Through the inclusion of black figures and religious symbolism, such as the rope acting as a halo, the piece reflects the empowerment and values instilled by my father within a cultural context often overlooked. Despite emotional absence, the subtle expressions of love through color and composition underscore the enduring connections and unique expressions of affection within the piece.',
       },
 
       {
@@ -199,7 +199,7 @@ const products = [
         image: ['/images/sunday.jpg'],
         media: 'Oil, acrylic, fabric on canvas, and digital collage',
         dimensions: '18x24in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'The multimedia artwork portrays a tender moment between myself as a toddler and my mother, delving into themes of religion, family dynamics, culture, and shared history. Through the symbolism of the burning bush, the piece encapsulates my mother\'s profound belief in me, reminiscent of the biblical narrative of Moses leading the Israelites. Despite occasional miscommunication, represented through the fragmented style, the artwork emphasizes the enduring strength of our familial bond and the profound influence of our shared past on shaping our identities.',
       },
 
       {
@@ -211,19 +211,19 @@ const products = [
         image: ['/images/reparations.JPG'],
         media: 'Acrylic, collage on canvas panel',
         dimensions: "9x9in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'In this mix media piece, acrylic, oil and collage were used to illustrate a radical idea about reparations. There’s a concern in which one, who are reparations really for, two, what is being given as reparations, three, is it ever enough and four, what happens when reparations are distributed?',
       },
 
       {
         id: 19,
-        name: 'Glitter will alwas make you feel better',
+        name: 'Glitter will always make you feel better',
         date: 2019,
         collection: '',
         price: 7000,
-        image: ['/images/glitter.jpg'],
+        image: ['/images/glitter.jpg', '/images/glitter-1.jpg', '/images/glitter-2.jpg', '/images/glitter-3.jpg', '/images/glitter-4.JPG'],
         media: 'Acrylic, oil on canvas, digital',
         dimensions: "18x24in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'The series of artworks unfolds a nuanced exploration of the artist\'s relationship with art, deepening as one progresses through the swiped images. The initial painting symbolizes a surface-level connection, where art is depicted as a captivating figure that collaboratively engages and educates the artist about various facets of life. However, as the digital distortions intensify with each swipe, the perception of this relationship transforms, culminating in a visually evocative "bad trip," highlighting the complex and unpredictable nature inherent in any artist-art relationship.',
       },
 
       {
@@ -235,7 +235,7 @@ const products = [
         image: ['/images/infinitum.jpg'],
         media: 'Charcoal, marker, and acrylic on canvas',
         dimensions: "8x11in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'This mixed-media artwork explores existential questions through its portrayal of a man with his subconscious holding a gun to its mouth, symbolizing the uncertainty and complexities of existence. The artist represents the ambiguity of identity by shaping the body with lines and shapes, creating a sense of hollowness. The inclusion of mirrored shapes conveys the duality and interconnectedness of life, while the textured acrylic and charcoal elements depict the enigmatic nature of space and the attempt to capture the four-dimensional aspects, ultimately questioning the finite nature of consciousness even   after death.',
       },
 
       {
@@ -367,7 +367,309 @@ const products = [
         media: 'photography and digital print',
         dimensions: '36x18in',
         description: 'An exquisite sculpture to adorn your living space.',
-      }
+      },
+      {
+        id: 32,
+        name: 'Targetted',
+        date: 2021,
+        collection: '',
+        price: 2000,
+        image: ['/images/TROUBLE1.JPG'],
+        media: 'photography and digital collage print',
+        dimensions: '36x36in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+      {
+        id: 33,
+        name: 'Sandra',
+        date: 2021,
+        collection: '',
+        price: 2000,
+        image: ['/images/sandra25.JPG'],
+        media: 'photography and digital collage print',
+        dimensions: '36x36in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+      {
+        id: 34,
+        name: 'Self Portrait of the Solo',
+        date: 2021,
+        collection: '',
+        price: 2000,
+        image: ['/images/trippingme11.JPG'],
+        media: 'photography and digital print',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+      {
+        id: 35,
+        name: 'SOULO',
+        date: 2021,
+        collection: '',
+        price: 2000,
+        image: ['/images/soulo.jpg', '/images/soulowarm.jpg', '/images/soulored.jpg', '/images/souloyellow.jpg'],
+        media: 'photography and digital print',
+        dimensions: '36x36in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 36,
+        name: 'Untitled',
+        date: 2022,
+        collection: '',
+        price: 15000,
+        image: ['/images/mene.jpg', '/images/soulowarm.jpg', '/images/soulored.jpg', '/images/souloyellow.jpg'],
+        media: 'Graphite and collage on paper, digital collage',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 37,
+        name: 'The Absurdist Manifesto',
+        date: 2022,
+        collection: '',
+        price: 20000,
+        image: ['/images/FAM-13.jpg', '/images/FAM-increasedcontrast3.jpg', '/images/FAM-14.JPG'],
+        media: 'Graphite and collage on paper, digital collage',
+        dimensions: '36x18in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 38,
+        name: 'RHAATID BRITIAN FI WI COLONIZA',
+        date: 2020,
+        collection: '',
+        price: 8000,
+        image: ['/images/RBFWC-0.JPG', '/images/RBFWC-1.JPG', '/images/RBFWC-2.JPG', '/images/RBFWC-3.JPG', '/images/RBFWC-4.JPG', '/images/RBFWC-5.JPG', '/images/RBFWC-6.JPG', '/images/RBFWC-7.JPG', '/images/RBFWC-8.JPG'],
+        media: 'Digital collage print',
+        dimensions: '18x18in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 39,
+        name: 'SOLO-02',
+        date: 2020,
+        collection: '',
+        price: 4000,
+        image: ['/images/SOLO-02-0.JPG', '/images/SOLO-02-1.JPG', '/images/SOLO-02-2.JPG'],
+        media: 'Graphite, marker, collage on paper, Digital collage print',
+        dimensions: '11x14in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 40,
+        name: 'Uncurated Pledge',
+        date: 2020,
+        collection: '',
+        price: 4000,
+        image: ['/images/uncurated-1.JPG', '/images/uncurated-2.jpg'],
+        media: 'Digital collage print',
+        dimensions: '10x10in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 41,
+        name: 'Bruised',
+        date: 2020,
+        collection: '',
+        price: 5000,
+        image: ['/images/bruised.JPG'],
+        media: 'Digital collage print',
+        dimensions: '10x10in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 42,
+        name: 'Happiness Break',
+        date: 2020,
+        collection: '',
+        price: 5000,
+        image: ['/images/happy-red.JPG', '/images/happy-green.JPG' ],
+        media: 'Digital print',
+        dimensions: '10x10in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 43,
+        name: 'In the bleak midwinter',
+        date: 2020,
+        collection: '',
+        price: 12000,
+        image: ['/images/newark.jpg'],
+        media: 'Photography print',
+        dimensions: '12x16in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 44,
+        name: 'OPIA!',
+        date: 2019,
+        collection: '',
+        price: 100000,
+        image: ['/images/opia-1.jpg', '/images/opia-2.JPG'],
+        media: 'Digital print',
+        dimensions: '16x16in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 45,
+        name: 'Cigarette Butts',
+        date: 2019,
+        collection: '',
+        price: 1000,
+        image: ['/images/cig-2.JPG', '/images/cig-1.JPG', '/images/cig-3.JPG', '/images/cig-4.JPG'],
+        media: 'Photography and digital print',
+        dimensions: '8.5x11in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 46,
+        name: 'Ma Soeur',
+        date: 2019,
+        collection: '',
+        price: 10000000000,
+        image: ['/images/cubism.JPG'],
+        media: 'Oil and acrylic on canvas',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      
+      {
+        id: 47,
+        name: 'Haze',
+        date: 2019,
+        collection: '',
+        price: 1000,
+        image: ['/images/haze.jpg'],
+        media: 'Photography ',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 48,
+        name: 'Untitled',
+        date: 2019,
+        collection: '',
+        price: 1000,
+        image: ['/images/brush.jpg'],
+        media: 'Photography ',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 49,
+        name: 'Freestyle illustrations',
+        date: 2019,
+        collection: '',
+        price: 100000,
+        image: ['/images/ill-1.jpg', '/images/ill-2.jpg', '/images/ill-3.jpg', '/images/ill-4.jpg', '/images/ill-5.jpg', '/images/ill-6.jpg', '/images/ill-7.jpg'],
+        media: 'Marker on paper ',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 50,
+        name: 'Self Awareness isn\'t Depression',
+        date: 2019,
+        collection: '',
+        price: 100,
+        image: ['/images/SD.jpg'],
+        media: 'Graphite on paper ',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 51,
+        name: 'I be so confused I ain\'t hard to find/ Prophers',
+        date: 2019,
+        collection: '',
+        price: 100000,
+        image: ['/images/false.jpg'],
+        media: 'Graphite on paper ',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 52,
+        name: 'When an Angel Lies',
+        date: 2022,
+        collection: 'Black Dog',
+        price: 100000,
+        image: ['/images/lies.jpg'],
+        media: 'Graphite on paper ',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 53,
+        name: 'Docs et la Fleur',
+        date: 2019,
+        collection: '',
+        price: 100000,
+        image: ['/images/docs.jpg'],
+        media: 'Acrylic on canvas',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 54,
+        name: 'I\'m not so pretty to look at',
+        date: 2019,
+        collection: '',
+        price: 100000,
+        image: ['/images/alter.jpg'],
+        media: 'Acrylic and graphite on paper',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 55,
+        name: 'Untitled',
+        date: 2021,
+        collection: '',
+        price: 5000,
+        image: ['/images/g.jpg'],
+        media: 'Graphite and charcoal on paper',
+        dimensions: '18x24in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 56,
+        name: 'The Decrepit\'s Grin',
+        date: 2021,
+        collection: '',
+        price: 50000,
+        image: ['/images/grin-1.JPG', '/images/grin-2.JPG', '/images/grin-3.JPG'],
+        media: 'Electrical tape, resin teeth sculpture',
+        dimensions: '9x8x12in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+
+
+
+      
   ];
   
   export default products;

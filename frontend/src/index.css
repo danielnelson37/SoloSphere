@@ -355,6 +355,12 @@ select {
   border-top: 2px solid white;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
 /* GalleryItemDetail.css*/
 .gallery-details {
   display: flex;

@@ -95,12 +95,16 @@ const GalleryList = () => {
     setCurrentPage(pageNumber);
   };
 
+  const handleFilterChange = () => {
+    setCurrentPage(1);
+  }
+
   return (
     <div className="gallery-list-container">
       <div className="filter-search-row">
         <h1 className="gallery-title">GALLERY</h1>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <GalleryFilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} />
+        <GalleryFilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} handleFilterChange={handleFilterChange} />
       </div>
 
       <div className="gallery-list">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterSection = ({ filters, setFilters, showFilters, setShowFilters }) => {
+const FilterSection = ({ filters, setFilters, showFilters, setShowFilters, handleFilterChange  }) => {
     return (
         <div className="filter-section">
             <button className="filter-button" onClick={() => setShowFilters(!showFilters)}>
@@ -14,7 +14,10 @@ const FilterSection = ({ filters, setFilters, showFilters, setShowFilters }) => 
             Filter by Date:
             <select
               value={filters.date}
-              onChange={(e) => setFilters({ ...filters, date: e.target.value })}
+              onChange={(e) => {
+                setFilters({ ...filters, date: e.target.value });
+                handleFilterChange(); 
+            }}
             >
               <option value="all">All</option>
               <option value="2019">2019</option>
@@ -30,7 +33,10 @@ const FilterSection = ({ filters, setFilters, showFilters, setShowFilters }) => 
             Filter by Media:
             <select
               value={filters.media}
-              onChange={(e) => setFilters({ ...filters, media: e.target.value })}
+              onChange={(e) => {
+                setFilters({ ...filters, date: e.target.value });
+                handleFilterChange(); 
+            }}
             >
               <option value="all">All</option>
               <option value="Digital">Digital</option>

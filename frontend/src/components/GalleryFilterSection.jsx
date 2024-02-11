@@ -34,7 +34,7 @@ const FilterSection = ({ filters, setFilters, showFilters, setShowFilters, handl
             <select
               value={filters.media}
               onChange={(e) => {
-                setFilters({ ...filters, date: e.target.value });
+                setFilters({ ...filters, media: e.target.value });
                 handleFilterChange(); 
             }}
             >

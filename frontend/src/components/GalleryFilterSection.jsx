@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterSection = ({ filters, setFilters, showFilters, setShowFilters, handleFilterChange  }) => {
+const GalleryFilterSection = ({ filters, setFilters, showFilters, setShowFilters, handleFilterChange  }) => {
     return (
         <div className="filter-section">
             <button className="filter-button" onClick={() => setShowFilters(!showFilters)}>
@@ -55,4 +55,4 @@ const FilterSection = ({ filters, setFilters, showFilters, setShowFilters, handl
     );
 };
 
-export default FilterSection;
+export default GalleryFilterSection;

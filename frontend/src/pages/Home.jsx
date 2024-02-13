@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from "react-router-dom";
 
 export default function HomePage() {
-  const [currentImageIndex, setCurrentImageIndex ]
-= useState(0)
+  const [currentImageIndex, setCurrentImageIndex ] = useState(0)
+const images = ['kirin.jpg', 'skeleton.jpg', 'angel.JPG', 'prophet.jpg', ];
+const location = useLocation();
 
-const images = [
-  'kirin.jpg',
-  'skeleton.jpg',
-  'angel.JPG',
-  'prophet.jpg', 
-];
+console.log("Location:", location)
 
 const handleNextImage = () => {
   setCurrentImageIndex((prevIndex)=> (prevIndex + 1) % images.length);
 }
 
 const handlePrevImage = () => {
-  setCurrentImageIndex((prevIndex) =>(prevIndex - 1 + images.length))
+  setCurrentImageIndex((prevIndex) =>(prevIndex - 1 + images.length));
 }
+
+useEffect (() => {
+    window.scrollTo(0, 0);
+ }, [location.pathname]);
 
 return (
   <div className="home-page">
@@ -36,8 +37,11 @@ return (
     <div className="detailed-bio">
     <h2>What is SOLISPHERE?</h2>
     <p>Welcome to SOLISPHERE, a unique space curated by artist Daniel Nelson. Explore a diverse range of creations, from websites to paintings, embodying existential themes that navigate the dance between absurdism, nihilism, and existentialism. Embracing the philosophy of the 'solo,' Daniel's work illuminates the transformative journey through darkness, portraying beauty in introspection and embracing the depth of the human experience. Witness the resilient core within, as SOLISPHERE showcases the profound belief that emerging from darkness brings forth a refined self.</p>
+    <button> 
+      <Link to='/gallery'>Explore Gallery</Link>
+    </button>
+    <button> Shop </button>
     </div>
-    
   </div>
 </div>
   )

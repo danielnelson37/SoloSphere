@@ -666,6 +666,18 @@ const products = [
         description: 'An exquisite sculpture to adorn your living space.',
       },
 
+      {
+        id: 57,
+        name: 'Untitled',
+        date: 2022,
+        collection: 'Black Dog',
+        price: 50000,
+        image: ['/images/nightlife2.jpg'],
+        media: 'Graphite on paper, digital',
+        dimensions: '24x18in',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
 
 
 

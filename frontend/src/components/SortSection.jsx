@@ -10,7 +10,7 @@ const SortSection = ({ sortOptions, sortBy, setSortBy, showSort, setShowSort, ha
       {showSort && (
         <div className="sort-options">
           <label>
-            Sort by:
+            Sort by
             <select
               value={sortBy}
               onChange={(e) => {

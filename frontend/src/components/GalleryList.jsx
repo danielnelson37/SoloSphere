@@ -82,7 +82,6 @@ import GalleryCard from './GalleryCard';
 import SearchBar from './SearchBar';
 import GalleryFilterSection from './GalleryFilterSection';
 import SortSection from './SortSection';
-import { Link } from 'react-router-dom';
 import products from '../productsData';
 
 const itemsPerPage = 12;
@@ -158,13 +157,13 @@ const GalleryList = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); // Run only on component mount
+  }, [currentPage]); // Run only on component mount
 
   return (
     <div className="gallery-list-container">
       <div className="filter-search-row">
         <h1 className="gallery-title">GALLERY</h1>
-        <SearchBar searchTerm={searchTerm} setSearchTerm={handleSearchChange} />
+        <SearchBar searchTerm={searchTerm} setSearchTerm={handleSearchChange} className="gallery-search-bar" />
         <GalleryFilterSection filters={filters} setFilters={setFilters} showFilters={showFilters} setShowFilters={setShowFilters} handleFilterChange={handleFilterChange} />
         <SortSection sortOptions={sortOptions} sortBy={sortBy} setSortBy={setSortBy} showSort={showSort} setShowSort={setShowSort} handleSortChange={handleSortChange} />
       </div>

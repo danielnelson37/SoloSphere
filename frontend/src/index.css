@@ -92,6 +92,14 @@ nav .right {
   justify-content: flex-end; /* For right div */
 }
 
+button {
+  background-color: #22092C;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 /* HomePage.css */
 
 .home-page {
@@ -118,7 +126,7 @@ nav .right {
 
 .content {
  position: absolute;
- top: 36%;
+ top: 33%;
  left: 50%;
  transform: translate(-50%, -50%);
 
@@ -165,6 +173,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   max-width: 100%;
   writing-mode: vertical-lr; /* Rotate text vertically from left to right */
   transform: rotate(-180deg); /* Additional rotation for browser compatibility */
+  margin-bottom: 1%;
   color: white; /* Adjust the color as needed */
  
 }
@@ -178,26 +187,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   flex-direction: column; /* Arrange items in a column */
   align-items: center;
   justify-content: center;
-  position: relative; /* Set position relative for absolute positioning of buttons */
 }
 
 .featured-art-content .mini-gallery button{
-  background: none;
   border: none;
-  font-size: 1.2em;
+  font-size: .7em;
   cursor: pointer;
   position: absolute; /* Set position absolute for overlaying */
   top: 50%; /* Position vertically in the middle */
   transform: translateY(-50%); /* Adjust to center precisely */
   color: white; /* Adjust the color as needed */
-}
-
-.featured-art-content .mini-gallery button.prev {
-  left: 10%; /* Position the "Prev" button on the left */
-}
-
-.featured-art-content .mini-gallery button.next {
-  right: 10%; /* Position the "Next" button on the right */
 }
 
 .featured-art-content .mini-gallery img{
@@ -206,6 +205,26 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   
 }
+
+.featured-art-icon-row{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-art-icon-row .prev,
+.featured-art-icon-row .next {
+  padding: 20%;
+  font-size: 3em;
+}
+
+.detailed-bio {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid white;
+  margin-left: 10%;
+}
+
 
 .detailed-bio h2 {
   position: relative;
@@ -218,7 +237,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: -2%;
   position: absolute;
   width: 57%;
-  
   bottom: 0; 
   left: 5%; 
 }
@@ -226,63 +244,70 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .detailed-bio p {
   text-align: left;
   padding-top: 2%;
-  padding-left: 2%; 
-  padding-right: 15%;
-  border-left: 2px solid white;
+  padding-right: 10%;
+  padding-bottom: 5%;
   border-top: 2px solid white;
   margin-left: 10%;
 }
 
+.home-button-row{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-left: 10%;
+}
+
+.explore-gallery-button,
+.home-shop-button{
+  padding: 5%;
+  font-size: 18px;
+}
+
+.explore-gallery-link,
+.home-shop-link{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
 
 /* Shop Page css*/
 .product-list-container {
   width: 100%;
 }
 /*  Search & filter css*/
-.filter-search-row {
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  
+.filter-search-row{
+  display: flex;
+  max-width: 100%;
+  align-items: center;
 }
 
+.search-bar{
+  margin-top: 1.5%;
+  width: 55%;
+  margin-right:3%;
+}
 
- .search-bar{
-  flex: 1;
-  max-width: 100%; 
-  margin-top: 1%;
-
-} 
-
-.search-bar-input {
-  /* Add your search bar styling here */
- width: 85%;
- height:40px;
- padding-left: 2%;
- background: white;
- border-radius: 30px;
- border: none;
+.search-bar-input{
+  width: 100%;
+  padding: 2%;
+  background: white;
+  border-radius: 30px;
+  border: none;
 }
 
 .filter-button {
-  /* Add your button styling here */
-  position: relative;
-  right: 170%;
   background-color: #22092C;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  font-size: 18px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .filters {
-  position: absolute;
-  top: 19%;
-  right: 3%;
-  max-width: 40%;
+  max-width: 100%;
   padding: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
@@ -293,24 +318,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
-/*Sort button*/
 .sort-button {
-  /* Add your button styling here */
-  position: relative;
-  right: 170%;
+  margin-left: 20%;
+  font-size: 18px;
   background-color: #22092C;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .sort-options {
-  position: absolute;
-  top: 19%;
-  right: 3%;
-  max-width: 40%;
+  max-width: 100%;
+  margin-left: 20%;
+  margin-right: 10%;
   padding: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
@@ -323,6 +345,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 select {
   border-radius: 8px;
   margin-left: 5px
+} 
+
+.gallery-title{
+  display: flex;
+  
 }
 
 /* Gallery.css */
@@ -383,8 +410,9 @@ select {
 
 .pagination {
   display: flex;
-  justify-content: center;
-  margin-top: 5%;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin: 5% 43.5%;
 }
 
 /* GalleryItemDetail.css*/

@@ -10,7 +10,8 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
                     className="search-bar-input"
                     placeholder="Search "
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    />
+                
+                   />
             </label>
         </div>
     )

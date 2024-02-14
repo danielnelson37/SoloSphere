@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'; 
 
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex ] = useState(0)
@@ -13,7 +15,7 @@ const handleNextImage = () => {
 }
 
 const handlePrevImage = () => {
-  setCurrentImageIndex((prevIndex) =>(prevIndex - 1 + images.length));
+  setCurrentImageIndex((prevIndex) =>(prevIndex - 1 + images.length) % images.length);
 }
 
 useEffect (() => {
@@ -28,19 +30,25 @@ return (
     <p className="tagline">Illuminating Shadows</p>
   </div>
   <div className="featured-art-content">
-    <h2 className="rotate-text">Featured Art </h2>
+    <h2 className="rotate-text">Featured Work </h2>
     <div className="mini-gallery">
-      <button onClick={handlePrevImage} className="prev">Prev</button>
       <img src = {`images/${images[currentImageIndex]}`} alt= {`Artwork ${currentImageIndex + 1}`} />
-      <button onClick={handleNextImage} className="next">Next</button>
+      <div className="featured-art-icon-row">
+      <FontAwesomeIcon icon={faCircleChevronLeft} onClick={handlePrevImage} className="prev"/>
+      <FontAwesomeIcon icon={faCircleChevronRight} onClick={handleNextImage} className="next"/>
+      </div>
     </div>
     <div className="detailed-bio">
     <h2>What is SOLISPHERE?</h2>
     <p>Welcome to SOLISPHERE, a unique space curated by artist Daniel Nelson. Explore a diverse range of creations, from websites to paintings, embodying existential themes that navigate the dance between absurdism, nihilism, and existentialism. Embracing the philosophy of the 'solo,' Daniel's work illuminates the transformative journey through darkness, portraying beauty in introspection and embracing the depth of the human experience. Witness the resilient core within, as SOLISPHERE showcases the profound belief that emerging from darkness brings forth a refined self.</p>
-    <button> 
-      <Link to='/gallery'>Explore Gallery</Link>
+    <div className="home-button-row">
+    <button className="explore-gallery-button"> 
+      <Link to='/gallery' className="explore-gallery-link">Explore Gallery</Link>
     </button>
-    <button> Shop </button>
+    <button className="home-shop-button"> 
+    <Link to="/shop" className="home-shop-link" >Shop</Link> 
+    </button>
+    </div>
     </div>
   </div>
 </div>

@@ -11,7 +11,7 @@ const GalleryFilterSection = ({ filters, setFilters, showFilters, setShowFilters
             {showFilters && (
         <div className="filters">
           <label>
-            Filter by Date:
+            Date
             <select
               value={filters.date}
               onChange={(e) => {
@@ -30,7 +30,7 @@ const GalleryFilterSection = ({ filters, setFilters, showFilters, setShowFilters
           </label>
 
           <label>
-            Filter by Media:
+            Media
             <select
               value={filters.media}
               onChange={(e) => {

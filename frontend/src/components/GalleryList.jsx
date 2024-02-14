@@ -93,13 +93,13 @@ const GalleryList = () => {
   });
   const [searchTerm, setSearchTerm] = useState('');
   const [showFilters, setShowFilters] = useState(false);
-  const [sortBy, setSortBy] = useState('date'); // Default sorting by date
+  const [sortBy, setSortBy] = useState('name'); // Default sorting by name
   const [showSort, setShowSort] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
   const sortOptions = [
-    { label: 'Date', value: 'date' },
     { label: 'Name', value: 'name' },
+    { label: 'Date', value: 'date' },
     { label: 'Unsort', value: 'unsorted' }, // Added "Unsorted" option
   ];
 
@@ -176,7 +176,7 @@ const GalleryList = () => {
 
       <div className="pagination">
         {Array.from({ length: totalPages }).map((_, index) => (
-          <button key={index} onClick={() => handlePageChange(index + 1)}>
+          <button key={index} onClick={() => handlePageChange(index + 1)} className={currentPage === index + 1 ? 'active' : ''}>
             {index + 1}
           </button>
         ))}

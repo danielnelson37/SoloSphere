@@ -100,6 +100,15 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: #F05941;
+}
+
+button:active {
+  background-color: #F05941;
+
+}
 /* HomePage.css */
 
 .home-page {
@@ -275,9 +284,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
 }
 /*  Search & filter css*/
-
 .filter-search-row{
   display: flex;
+  margin-left: 2%;
   max-width: 100%;
   align-items: center;
 }
@@ -285,7 +294,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .search-bar{
   margin-top: 1.5%;
   width: 55%;
-  margin-right:3%;
+  margin-right:5%;
 }
 
 .search-bar-input{
@@ -410,9 +419,15 @@ select {
 
 .pagination {
   display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  margin: 5% 43.5%;
+  justify-content: space-around;
+  margin:2% 41%;
+}
+
+.pagination button.active {
+  background-color: #BE3144; /* Choose your preferred color */
+  color: white;
+  border: none;
+  text-decoration: none;
 }
 
 /* GalleryItemDetail.css*/
@@ -421,9 +436,8 @@ select {
   flex-direction: column;
   max-width: 90%;
   margin: 2% auto;
-  padding: 10px;
-  border-radius: 5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1%;
+  border-radius: 3%;
   background-color: #fff;
 }
 

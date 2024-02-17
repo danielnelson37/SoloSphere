@@ -11,7 +11,15 @@ export default function SiteHeadingAndNav() {
         <div className="left">
           <ul>
             <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/users' end={true}>Users</NavLink></li>
+            <li><NavLink to='/about'>About</NavLink></li>
+            <li><NavLink to='/gallery'>Gallery</NavLink></li>
+            <li><NavLink to='/contact'>Contact</NavLink></li>
+          </ul>
+        </div>
+        <a id='logo' href='/'>SOLISPHERE</a>
+        <div className="right">
+          <ul>
+            <li><NavLink to='/shop'>Shop</NavLink></li>
             {currentUser
               ? <li><NavLink to={`/users/${currentUser.id}`}>{currentUser.username}</NavLink></li>
               : <>
@@ -19,16 +27,7 @@ export default function SiteHeadingAndNav() {
                 <li><NavLink to='/sign-up'>Sign Up</NavLink></li>
               </>
             }
-            <li><NavLink to='/gallery'>Gallery</NavLink></li>
-          </ul>
-        </div>
-        <a id='logo' href='/'>SOLISPHERE</a>
-        <div className="right">
-          <ul>
-            <li><NavLink to='/shop'>Shop</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
-            <li><NavLink to='/contact'>Contact</NavLink></li>
-            <li><NavLink to='/faqs'>FAQs</NavLink></li>
+            <li><NavLink to='/users' end={true}>Users</NavLink></li>
           </ul>
         </div>
       </nav>

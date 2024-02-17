@@ -6,6 +6,7 @@ import SignUpPage from './pages/SignUp';
 import LoginPage from './pages/Login';
 import ShopPage from './pages/Shop';
 import GalleryPage from './pages/Gallery';
+import AboutPage from'./pages/About';
 import SiteHeadingAndNav from './components/SiteHeadingAndNav';
 import Footer from './components/Footer';
 import NotFoundPage from './pages/NotFound';
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/sign-up" element={<SignUpPage />} />
           <Route path="/users" element={<UsersPage />} />
           <Route path="/users/:id" element={<UserPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/gallery" element={<GalleryPage />} />

@@ -93,7 +93,7 @@ nav .right {
 }
 
 button {
-  background-color: #22092C;
+  background-color: #1b1b1b;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -110,7 +110,6 @@ button:active {
 
 }
 /* HomePage.css */
-
 .home-page {
   position: relative;
   text-align: center;
@@ -121,19 +120,14 @@ button:active {
   /* Add padding as needed */
 }
 
-.prototype{
-  position: absolute;
-  right: 83%;
-  max-width: 20%;
-}
 
 .landingpage-title{
   font-size: 11em; /* Adjust the font size */
-  margin-bottom: 20%; /* Adjust margin as needed */
+  margin-bottom: 30%; /* Adjust margin as needed */
 }
 
 .landingpage-image {
-  width: 50%; /* Adjust the width of the image */
+  width: 40%; /* Adjust the width of the image */
   max-width: 100%; /* Set a maximum width for responsiveness */
   border-radius: 8px;
   margin-top: 2%;
@@ -151,7 +145,7 @@ button:active {
   text-align: right;
   position: relative;
   right: 13%;
-  top: -190px;
+  top: -300px;
   font-size: 40px;
   font-weight: 500;
   
@@ -164,7 +158,7 @@ h1 span::before {
   width: 590px; /* Adjust the width of the circle */
   height: 590px; /* Adjust the height of the circle */
   border-radius: 50%; /* Create a circular shape */
-  top: -17px; /* Adjust the vertical position */
+  top: -50px; /* Adjust the vertical position */
   left: 68%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust to center precisely */
   z-index: -1; /* Place behind the text */
@@ -183,39 +177,33 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 5%; /* Add margin as needed */
 }
 
+.featured-work-container{
+  background-color: black;
+  padding: 5% 0;
+  border-radius: 90px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .rotate-text {
   font-size: 60px;
   max-width: 100%;
   writing-mode: vertical-lr; /* Rotate text vertically from left to right */
   transform: rotate(-180deg); /* Additional rotation for browser compatibility */
-  margin-bottom: 1%;
   color: white; /* Adjust the color as needed */
- 
 }
 
 .featured-art-content .mini-gallery{
-  /* display:flex;
-  align-items: center;
-  justify-content: space-between; 
-  margin: 20px 0; */
   display: flex;
+  max-width: 100%;
   flex-direction: column; /* Arrange items in a column */
   align-items: center;
   justify-content: center;
 }
 
-.featured-art-content .mini-gallery button{
-  border: none;
-  font-size: .7em;
-  cursor: pointer;
-  position: absolute; /* Set position absolute for overlaying */
-  top: 50%; /* Position vertically in the middle */
-  transform: translateY(-50%); /* Adjust to center precisely */
-  color: white; /* Adjust the color as needed */
-}
 
 .featured-art-content .mini-gallery img{
-  width: 300px;
+  width: 430px;
   height: auto;
   border-radius: 8px;
   
@@ -225,13 +213,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   max-width: 100%;
   display: flex;
   justify-content: center;
+  
+  
 }
 
 .featured-art-icon-row .prev,
 .featured-art-icon-row .next {
-  padding: 20%;
+  padding: 5% 30%;
   font-size: 3em;
 }
+
+
 
 .detailed-bio {
   display: flex;
@@ -250,7 +242,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size:30px;
   text-align: left;
   margin-left: 5%;
-
 }
 
 
@@ -258,7 +249,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .detailed-bio p {
   font-size:20px;
   text-align: left;
-  
   padding-right: 10%;
   padding-bottom: 5%;
   margin-left: 5%;
@@ -268,16 +258,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display:flex;
   justify-content: space-evenly;
   align-items: stretch;
+  max-width: 80%;
 }
 
 .explore-gallery-button,
-.home-shop-button{
+.home-shop-button,.home-about-button{
   padding: 2% 5%;
   font-size: 18px;
 }
 
 .explore-gallery-link,
-.home-shop-link{
+.home-shop-link, .home-about-link{
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -312,12 +303,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-.introduction-row-1{
+.about-row-1{
   display: flex;
   max-width: 90%;
   margin: 0 auto;
-  border-bottom: 2px solid white;
-  
+  margin-top: 2%;
+  margin-bottom: -5%;
 }
 
 .introduction {
@@ -346,7 +337,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
-  margin-right: 0%;
 }
 
 .introduction p {
@@ -375,11 +365,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .philosophy-inspiration-container{
   max-width: 60%;
+  align-items: flex-end;
   margin: auto;
-  margin-bottom: 13.5% !important;
+  margin-bottom: 11% !important;
   padding-left: 2%;
   border-left: 2px solid white;
   
+}
+
+.artistic-philosophy h2{
+  font-size: 30px;
 }
 .rect-container{
   display: flex;
@@ -400,21 +395,139 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   height: 20px;
   margin-right: -30%;
 }
-.introduction-row-2{
-  max-width: 90%;
+
+
+.row-of-circles-1{
+  display: flex;
+  max-width: 20%;
+  justify-content:space-between;
   margin: 0 auto;
 }
 
-.beyond-the-canvas-image-container{
-display: flex;
-max-width: 100%;
-margin: auto;
-justify-content: space-evenly;
+.bordered-circle-1-1, .bordered-circle-2-1, .bordered-circle-3-1{
+  width: 30px; /* Set the width of the circle */
+  height: 30px; /* Set the height of the circle */
+  border-radius: 50%; /* Create a circle using border-radius */
+  border: 2px solid #333; /* Set the border color and width */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Set text color */
+  text-align: center;
 }
-.beyond-the-canvas-image-container img{
-  width: 30%;
-  object-fit: cover;
+
+.bordered-circle-1-1{
+  background-color: black;
+  border: none;
+  width: 32px;
+  height:32px;
+}
+
+.about-row-2{
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding-left: 2%;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.about-row-2 h2 {
+  font-size: 30px;
+}
+
+.beyond-the-canvas-image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%; /* Adjust as needed */
+  max-height: 100%;
+ 
+}
+
+.image-with-description {
+  position: relative;
+  max-width: 45%; /* Adjust as needed */
+  margin-right: 2%;
+}
+
+.image-with-description img {
+  max-width: 100%;
+  height: 100%;
   border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-with-description p {
+  position: absolute;
+  width: 80%;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 5%;
+  background: rgba(0, 0, 0, 0.019);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-text-2{
+  color: black !important;
+}
+
+.image-with-description:hover p {
+  opacity: 1;
+}
+
+.digital-tools{
+  max-width: 100%;
+  writing-mode: vertical-lr; /* Rotate text vertically from left to right */
+  margin: auto 0;
+  margin-left:-2%;
+  color: white; /* Adjust the color as needed */
+  background-color: black;
+  padding: 10% 0;
+  border-radius: 90px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.digital-tools h2{
+  font-size: 2em;
+}
+
+.row-of-circles-2{
+  display: flex;
+  max-width: 10%;
+  justify-content:space-between;
+  margin: 2% auto;
+}
+
+.bordered-circle-1-2, .bordered-circle-2-2, .bordered-circle-3-2{
+  width: 30px; /* Set the width of the circle */
+  height: 30px; /* Set the height of the circle */
+  border-radius: 50%; /* Create a circle using border-radius */
+  border: 2px solid #333; /* Set the border color and width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Set text color */
+  text-align: center;
+}
+
+.bordered-circle-2-2{
+  background-color: black;
+  border: none;
+  width: 32px;
+  height:32px;
 }
 
 /* Shop Page css*/
@@ -615,7 +728,7 @@ select {
   max-width: 50%; /* Adjust the max-width to scale the image down */
   max-height: 10%; /* Adjust the max-height to scale the image down */
   object-fit: cover; /* Use contain to maintain aspect ratio */
-  margin: 0 auto;  
+  margin: 0 auto; 
 }
 
 .image-navigation {
@@ -623,6 +736,35 @@ select {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+/* Add these styles to your existing CSS */
+
+.thumbnail-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.thumbnail {
+  max-width: 50px; /* Adjust the max-width of each thumbnail */
+  max-height: 50px; /* Adjust the max-height of each thumbnail */
+  margin: 1% 2%;
+  cursor: pointer;
+  border: 2px solid #22092C; /* Border color for unselected thumbnails */
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+
+
+.thumbnail.selected {
+  border-color: #F05941; /* Border color for the selected thumbnail */
+}
+
+.thumbnail:hover {
+  border-color: #F05941; /* Border color on hover */
 }
 
 .gallery-bio {

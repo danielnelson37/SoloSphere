@@ -13,7 +13,6 @@ export default function SiteHeadingAndNav() {
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/about'>About</NavLink></li>
             <li><NavLink to='/gallery'>Gallery</NavLink></li>
-            <li><NavLink to='/contact'>Contact</NavLink></li>
           </ul>
         </div>
         <a id='logo' href='/'>SOLISPHERE</a>

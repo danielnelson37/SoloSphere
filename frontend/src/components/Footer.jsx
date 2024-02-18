@@ -40,7 +40,6 @@ const Footer = () => {
                 <div className="navigation-links">
                     <ul>
                         <li><NavLink to='/about'>About</NavLink></li>
-                        <li><NavLink to='/contact'>Contact</NavLink></li>
                         <li><NavLink to='/gallery'>Gallery</NavLink></li>
                         <li><NavLink to='/privacy-policy'>Privacy Policy</NavLink></li>
                         <li><NavLink to='/terms-of-service'>Terms of Service</NavLink></li>

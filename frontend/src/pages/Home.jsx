@@ -23,8 +23,6 @@ useEffect (() => {
  }, [location.pathname]);
 
 return (
-
-  
   <div className="home-page">
       <img src="images/RBFWC-0.JPG" alt="Description" className="landingpage-image" />
   <div className="content">

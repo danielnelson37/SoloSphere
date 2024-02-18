@@ -73,7 +73,7 @@
 // };
 
 // export default GalleryItemDetails;
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
@@ -89,6 +89,14 @@ const GalleryItemDetails = () => {
   }
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+
+useEffect(() => {
+    const productIndex= products.findIndex((p)=> p.id ===parseInt(id, 10));
+    const itemsPerPage = 12;
+    const newPage = Math.ceil((productIndex + 1) / itemsPerPage);
+    setCurrentPage(newPage);
+}, [id]);
 
   const handleNextImage = () => {
     const nextIndex = (currentImageIndex + 1) % product.image.length;
@@ -105,7 +113,7 @@ const GalleryItemDetails = () => {
   };
 
   const handleGoBack = () => {
-    navigate('/gallery');
+    navigate(`/gallery?page=${currentPage}`);
   };
 
   return (

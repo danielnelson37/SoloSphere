@@ -179,14 +179,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .featured-work-container{
   background-color: black;
-  padding: 5% 0;
+  padding: 11% 0;
   border-radius: 90px;
   margin-left: 2%;
   margin-right: 2%;
 }
 
 .rotate-text {
-  font-size: 60px;
+  font-size: 3em;
   max-width: 100%;
   writing-mode: vertical-lr; /* Rotate text vertically from left to right */
   transform: rotate(-180deg); /* Additional rotation for browser compatibility */
@@ -432,6 +432,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .about-row-2 h2 {
+  text-align: center;
   font-size: 30px;
 }
 
@@ -608,10 +609,47 @@ select {
 } 
 
 /* Gallery.css */
+.gallery{
+  display: flex;
+}
+
+
+.gallery-rect-column{
+  display: flex;
+  flex-direction: column;
+  max-width: 10%;
+  margin-left: 2%;
+  margin-top: 3%;
+
+}
+
+.gallery-rect-1{
+  background-color: white;
+  height: 60%;
+  width: 20px;
+  margin-bottom: 30%;
+}
+
+.gallery-rect-2{
+  border: 2px solid white;
+  height: 40%;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  justify-content: space-evenly;/* Adjust as needed */
+  margin-left: 2%;
+  padding-top: 2%;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
 .gallery-title {
   display: flex;
   font-size: 45px;
-  margin: 2%;
+  margin-right: 2%;
 }
 
 /* GalleryCard.css*/
@@ -619,17 +657,20 @@ select {
   display: flex;
   max-width: calc(20% - 10px);
   max-height:auto;
+  
   flex-direction: column;
   border: 1px solid #ddd; /* Add a border for separation */
   border-radius: 8px; /* Add some border radius for a softer look */
   overflow: hidden; /* Hide overflow for better image presentation */
   margin: 10px; /* Add margin for spacing between cards */
+  text-align: center;
 }
 
 .gallery-image {
-  max-width: 100%; /* Set the width of the image */
-  max-height: auto; /* Maintain the aspect ratio of the image */
+  width: 100%; /* Set the width of the image */
+  height: 350px; /* Maintain the aspect ratio of the image */
   object-fit: cover;
+  background-color: white;
 }
 
 .gallery-card a {
@@ -639,6 +680,9 @@ select {
 .gallery-info {
   flex: 1;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gallery-name {
@@ -646,6 +690,7 @@ select {
   margin-bottom: 10px; /* Add margin between product name and description */
   text-decoration: none;
   color: #333; /* Set a color for the product name */
+  text-align: center;
 }
 
 .gallery-date {
@@ -654,15 +699,6 @@ select {
 }
 
 
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;/* Adjust as needed */
-  margin-left: 2%;
-  padding-top: 2%;
-  border-left: 2px solid white;
-  border-top: 2px solid white;
-}
 
 .pagination {
   display: flex;
@@ -682,9 +718,9 @@ select {
   display: flex;
   flex-direction: column;
   max-width: 90%;
-  margin: 2% auto;
-  padding: 1%;
-  border-radius: 3%;
+   margin: 2% auto;
+  padding: 1%; 
+  border-radius: 30px;
   background-color: #fff;
 }
 
@@ -701,7 +737,7 @@ select {
 .details-container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 1% auto;
   
 }
 

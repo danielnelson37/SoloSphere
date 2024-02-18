@@ -20,9 +20,12 @@
 
 // export default AboutPage;
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const AboutPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []); 
   return (
     <div className="about-container">
       <header className="about-header">

@@ -51,9 +51,10 @@ const AboutPage = () => {
         <section className="artistic-philosophy">
         <h2>Creative Philosophy</h2>
         <p>
-          SOLISPHERE serves as a beacon of introspection and illumination, embodying the philosophy of the 'solo.' Each piece portrays the beauty found in introspection, delving into the profound depths of the human experience. Drawing inspiration from philosophers like Fyodor Dostoevsky, Friedrich Nietzsche, Albert Camus, Arthur Schopenhauer, and Miyamoto Musashi, my art explores existential and psychological themes, guiding individuals through their internal struggles with courage and resilience. Not only does each piece of work take inspiration from profound philosphical concepts but also takes inspiration from personal experiences, and cultural influences. Each piece reflects a deep exploration of the absurd, individualism, and the transformative power of personal journeys. 
+          SOLISPHERE serves as a beacon of introspection and illumination, embodying the philosophy of the 'solo.' Each piece portrays the beauty found in introspection, delving into the profound depths of the human experience. Drawing inspiration from philosophers like Fyodor Dostoevsky, Friedrich Nietzsche, Albert Camus, Arthur Schopenhauer, and Miyamoto Musashi, my art explores existential and psychological themes, guiding individuals through their internal struggles with courage and resilience. Not only does each piece of work take inspiration from profound philosphical concepts but also takes inspiration from personal experiences, and cultural influences. Each piece reflects a deep exploration of the absurd, individualism, and the transformative power of personal journeys.  
         </p>
-        <p>Utilizing a diverse range of mediums and innovative techniques, my creations span immersive websites to thought-provoking multimedia paintings and drawings. The fusion of fine arts, graphic design, and technology, as showcased in projects like SAP (FORTHESOUL), 2022, reflects my commitment to pushing the boundaries of creative expression
+        <p>Utilizing a diverse range of mediums and innovative techniques, my creations span immersive websites to thought-provoking multimedia paintings and drawings. The fusion of fine arts, graphic design, and technology, as showcased in projects like SAP (FORTHESOUL), 2022, reflects my commitment to pushing the boundaries of creative expression.           SOLISPHERE aims to resonate with you on a personal level, sparking introspection and inviting you to explore the transformative path through darkness. Your interpretation and engagement with my work add depth to its meaning.
+
         </p>
       </section>
       <div className="row-of-circles-1">
@@ -67,11 +68,13 @@ const AboutPage = () => {
       </section>
       </section>
       <section className="about-row-2">
+        <section className="beyond-the-canvas-image-container">
+        <div className="beyond-column">
         <h2>Beyond the Canvas</h2>
         <p>
           Throughout my artistic journey, I've had the privilege of contributing to impactful software projects like Second Wind and CareerSpring. These endeavors have extended the guiding light of SOLISPHERE into the digital realm, offering resources, support, and employment to those navigating challenging times.
         </p>
-        <section className="beyond-the-canvas-image-container">
+        </div>
         <div className="image-with-description">
         <a href="https://second-wind-udn3.onrender.com/landing" target="_blank">
         <img src="/images/secondwind.jpg" alt="desc"/>
@@ -82,13 +85,11 @@ const AboutPage = () => {
         <div className="image-with-description">
         <a href="https://careerassess.mysites.io/?page_id=2" target="_blank">
         <img src="/images/careerspring.jpg" alt="desc"/>
-        <p className="image-text-2"> As a developer Contractor, I’ve been instrumental in developing software like CareerSpring’s Career Interest Profiler by leveraging JavaScript, HTML & CSS. This custom career assessment tool seamlessly integrated into WordPress serves as a beacon for individuals exploring their professional paths. Through meticulous design, wireframing, and technical implementation, I created a tool that not only enhances user experience but aligns with long-term organizational goals. This tool, part of CareerSpring, serves as a beacon, guiding individuals towards careers that align with their interests.
+        <p className="image-text-2"> As a Developer Contractor, I’ve been instrumental in developing software like CareerSpring’s Career Interest Profiler by leveraging JavaScript, HTML & CSS. This custom career assessment tool seamlessly integrated into WordPress serves as a beacon for individuals exploring their professional paths. Through meticulous design, wireframing, and technical implementation, I created a tool that not only enhances user experience but aligns with long-term organizational goals. This tool, part of CareerSpring, serves as a beacon, guiding individuals towards careers that align with their interests.
         </p>
         </a>
         </div>
-        <div className="digital-tools">
-            <h2>Digital Tools</h2>
-        </div>
+       
         </section>
         <div className="row-of-circles-2">
         <div className="bordered-circle-1-2">
@@ -98,13 +99,6 @@ const AboutPage = () => {
         <div className="bordered-circle-3-2">
         </div>
         </div>
-      </section>
-
-      <section className="connection-with-viewers">
-        <h2>Connection with Viewers</h2>
-        <p>
-          I hope my art resonates with you on a personal level, sparking introspection and inviting you to explore the transformative path through darkness. Your interpretation and engagement with my work add depth to its meaning.
-        </p>
       </section>
 
       <section className="upcoming-projects">

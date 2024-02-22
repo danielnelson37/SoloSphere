@@ -1,28 +1,20 @@
-// import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'; 
 
-// const AboutPage = () => {
-//     return (
-//         <div className="About">
-//             <h1>About</h1>
-//             <div className="about-paragraph-1">
-//                 <h2>My vision</h2>
-//             </div>
-//             <div className="about-paragraph-2">
-//                <h2> The Man and the Myth</h2>
-//             </div>
-//             <div className="about-paragraph-3">
-                
-//             </div>
-//         </div>
-
-//     )
-// }
-
-// export default AboutPage;
-
-import React, { useEffect } from 'react';
 
 const AboutPage = () => {
+    const [currentTattooImageIndex, setCurrentTattooImageIndex] = useState(0);
+const tattooImages = ["tat-1.jpg", "tat-2.jpg", "tat-3.jpg", "tat-4.jpg", "tat-5.jpg"]
+
+      const handleNextTattooImage = () => { 
+        setCurrentTattooImageIndex((prevIndex)=> (prevIndex + 1) % tattooImages.length);
+      }
+      
+      const handlePrevTattooImage = () => {
+        setCurrentTattooImageIndex((prevIndex) =>(prevIndex - 1 + tattooImages.length) % tattooImages.length);
+      }
+
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []); 
@@ -54,7 +46,6 @@ const AboutPage = () => {
           SOLISPHERE serves as a beacon of introspection and illumination, embodying the philosophy of the 'solo.' Each piece portrays the beauty found in introspection, delving into the profound depths of the human experience. Drawing inspiration from philosophers like Fyodor Dostoevsky, Friedrich Nietzsche, Albert Camus, Arthur Schopenhauer, and Miyamoto Musashi, my art explores existential and psychological themes, guiding individuals through their internal struggles with courage and resilience. Not only does each piece of work take inspiration from profound philosphical concepts but also takes inspiration from personal experiences, and cultural influences. Each piece reflects a deep exploration of the absurd, individualism, and the transformative power of personal journeys.  
         </p>
         <p>Utilizing a diverse range of mediums and innovative techniques, my creations span immersive websites to thought-provoking multimedia paintings and drawings. The fusion of fine arts, graphic design, and technology, as showcased in projects like SAP (FORTHESOUL), 2022, reflects my commitment to pushing the boundaries of creative expression.           SOLISPHERE aims to resonate with you on a personal level, sparking introspection and inviting you to explore the transformative path through darkness. Your interpretation and engagement with my work add depth to its meaning.
-
         </p>
       </section>
       <div className="row-of-circles-1">
@@ -85,7 +76,7 @@ const AboutPage = () => {
         <div className="image-with-description">
         <a href="https://careerassess.mysites.io/?page_id=2" target="_blank">
         <img src="/images/careerspring.jpg" alt="desc"/>
-        <p className="image-text-2"> As a Developer Contractor, I’ve been instrumental in developing software like CareerSpring’s Career Interest Profiler by leveraging JavaScript, HTML & CSS. This custom career assessment tool seamlessly integrated into WordPress serves as a beacon for individuals exploring their professional paths. Through meticulous design, wireframing, and technical implementation, I created a tool that not only enhances user experience but aligns with long-term organizational goals. This tool, part of CareerSpring, serves as a beacon, guiding individuals towards careers that align with their interests.
+        <p className="image-text-2">As a Developer Contractor, I’ve been instrumental in developing software like CareerSpring’s Career Interest Profiler by leveraging JavaScript, HTML & CSS. This custom career assessment tool seamlessly integrated into WordPress serves as a beacon for individuals exploring their professional paths. Through meticulous design, wireframing, and technical implementation, I created a tool that not only enhances user experience but aligns with long-term organizational goals. This tool, part of CareerSpring, serves as a beacon, guiding individuals towards careers that align with their interests.
         </p>
         </a>
         </div>
@@ -100,12 +91,54 @@ const AboutPage = () => {
         </div>
         </div>
       </section>
-
+    
+      <section className="about-row-3">
       <section className="upcoming-projects">
+        <div className="upcoming-projects-text-section">
         <h2>Upcoming Projects</h2>
-        <p>
-          Stay tuned for upcoming projects, exhibitions, and collaborations. Your continued support fuels my artistic journey, and I look forward to sharing more with you.
-        </p>
+        </div>
+        <div className='mini-galleries'>
+        <div className="chrome-mini-gallery">
+      <img src = {`images/HeartinChrome.jpg`} alt= {`Heart in Chrome logo`} />
+      <div className='chrome-text'>
+      <section className="rect-container">
+            <section className="rect-1"></section>
+            <section className="rect-2"></section>
+            </section>
+      <h3>Heart in Chrome: A deep dive into illustration</h3>
+      <p>"Heart in Chrome" is a graphic novel set in Neo New York 2063, artist Luke Kane's acclaimed masterpieces are stolen by rogue agents orchestrated by CEO Viktor Blackwood. Luke's quest for redemption unravels a conspiracy, blurring lines between ally and adversary in a high-stakes cyberpunk thriller that explores the sinister nexus of art, identity, and power.</p>
+      </div>
+    </div>
+    </div>
+    <div className='tattoo-container'>
+    <div className="tattoo-text">
+    <section className="rect-container">
+            <section className="rect-1"></section>
+            <section className="rect-2"></section>
+            </section>
+    <h3>Tattoo Artistry</h3>
+    <p>Beyond the realms of traditional art, I'm venturing into the world of tattooing, specializing in traditional black and grey styles. As my journey unfolds, I aspire to master diverse areas, including color realism and more. This new chapter adds another layer to my creative odyssey, exploring different ways to connect art with personal experiences and cultural influences.</p>
+    <div className="row-of-circles-3">
+        <div className="bordered-circle-1-3">
+        </div>
+        <div className="bordered-circle-2-3">
+        </div>
+        <div className="bordered-circle-3-3">
+        </div>
+        </div>
+    </div>
+    <div className="tattoo-mini-gallery">
+      <img src = {`images/${tattooImages[0]}`} alt= {"tat-0"} />
+      <img src = {`images/${tattooImages[1]}`} alt= {"tat-1"} />
+      <div className='image-column'>
+      <img src = {`images/${tattooImages[4]}`} alt= {"tat-4"} />
+      <img src = {`images/${tattooImages[3]}`} alt= {"tat-3"} />
+      </div>  
+      
+    </div>
+    </div>
+    
+      </section>
       </section>
 
       <section className="contact-information">

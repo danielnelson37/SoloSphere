@@ -16,11 +16,10 @@ body {
     linear-gradient(rgba(61, 66, 66, 0.189), transparent),
     linear-gradient(to top left, rgb(39, 39, 39), transparent),
     linear-gradient(to top right, rgb(155, 155, 155), transparent);
-  background-blend-mode: screen;
+  background-blend-mode:screen;
   background-size: 100%;  
+  background-color:rgb(105, 105, 105);
 }
-
-
 
 input, label {
   display: block;
@@ -35,7 +34,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  
 }
 
 #logo {
@@ -247,7 +245,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 
 .detailed-bio p {
-  font-size:20px;
+  font-size:18px;
   text-align: left;
   padding-right: 10%;
   padding-bottom: 5%;
@@ -304,13 +302,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-right:30% !important;
   padding: 2%;
   padding-left: 5%;
-
 }
 
 
 .about-row-1{
   display: flex;
-  max-width: 90%;
+  max-width: 92%;
   margin: 0 auto;
   margin-bottom: -5%;
 }
@@ -372,13 +369,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   align-items: flex-end;
   margin: auto;
   margin-bottom: 11% !important;
-  padding-left: 2%;
+  margin-left: 2%;
+  padding-left: 4%;
   border-left: 2px solid white;
   
 }
 
 .artistic-philosophy h2{
   font-size: 30px;
+}
+
+.artistic-philosophy p{
+  font-size: 18px;
 }
 .rect-container{
   display: flex;
@@ -403,14 +405,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .row-of-circles-1{
   display: flex;
-  max-width: 20%;
+  max-width: 15%;
   justify-content:space-between;
   margin: 0 auto;
 }
 
 .bordered-circle-1-1, .bordered-circle-2-1, .bordered-circle-3-1{
-  width: 30px; /* Set the width of the circle */
-  height: 30px; /* Set the height of the circle */
+  width: 20px; /* Set the width of the circle */
+  height: 20px; /* Set the height of the circle */
   border-radius: 50%; /* Create a circle using border-radius */
   border: 2px solid #333; /* Set the border color and width */
   font-size: 1.2rem; /* Adjust font size as needed */
@@ -422,8 +424,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .bordered-circle-1-1{
   background-color: black;
   border: none;
-  width: 32px;
-  height:32px;
+  width: 22px;
+  height:22px;
 }
 
 .about-row-2{
@@ -432,7 +434,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 2%;
   padding-left: 2%;
   border-left: 2px solid white;
-  border-top: 2px solid white;
+  border-radius: 1px;
 }
 
 .about-row-2 h2 {
@@ -442,8 +444,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .beyond-column{
   display: flex;
   flex-direction: column;
-  max-width: 15%;
+  max-width: 20%;
   margin-right: 5%;
+}
+
+.beyond-column p{
+  font-size: 18px;
 }
 
 .beyond-the-canvas-image-container {
@@ -483,7 +489,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
 }
@@ -512,14 +518,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .row-of-circles-2{
   display: flex;
-  max-width: 10%;
+  max-width: 9%;
   justify-content:space-between;
   margin: 2% auto;
 }
 
 .bordered-circle-1-2, .bordered-circle-2-2, .bordered-circle-3-2{
-  width: 30px; /* Set the width of the circle */
-  height: 30px; /* Set the height of the circle */
+  width: 20px; /* Set the width of the circle */
+  height: 20px; /* Set the height of the circle */
   border-radius: 50%; /* Create a circle using border-radius */
   border: 2px solid #333; /* Set the border color and width */
   display: flex;
@@ -534,8 +540,103 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .bordered-circle-2-2{
   background-color: black;
   border: none;
-  width: 32px;
-  height:32px;
+  width: 22px;
+  height: 22px;
+}
+
+
+
+.upcoming-projects{
+  max-width: 88%;
+  margin: 0 auto;
+  border-left: 2px solid white;
+  padding: 2%;
+}
+
+.upcoming-projects p {
+  font-size: 18px;
+}
+
+.upcoming-projects-text-section{
+  max-width: 50%;
+  margin-right: 5%;
+}
+
+.upcoming-projects-text-section h2{
+  font-size: 30px;
+}
+
+
+
+.chrome-text{
+  max-width: 40%;
+  margin: auto;
+  padding-left: 3.5%;
+  border-left: 2px solid white;
+}
+
+.chrome-mini-gallery{
+  display: flex;
+}
+
+.chrome-mini-gallery img{
+  width: 600px;
+  border-radius: 10px;
+}
+
+.tattoo-container{
+  display: flex;
+  margin-top:2%;
+
+}
+
+.tattoo-mini-gallery{
+  padding-left: 2%;
+}
+
+.tattoo-text {
+  max-width: 50%;
+  margin: auto 0;
+  border-right: 2px solid white;
+  padding-right: 3%;
+  
+}
+
+.row-of-circles-3{
+  display: flex;
+  max-width: 20%;
+  justify-content:space-between;
+  margin: 2% auto;
+}
+
+.bordered-circle-1-3, .bordered-circle-2-3, .bordered-circle-3-3{
+  width: 20px; /* Set the width of the circle */
+  height: 20px; /* Set the height of the circle */
+  border-radius: 50%; /* Create a circle using border-radius */
+  border: 2px solid #333; /* Set the border color and width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #333; /* Set text color */
+  text-align: center;
+}
+
+.bordered-circle-3-3{
+  background-color: black;
+  border: none;
+  width: 22px;
+  height:22px;
+}
+
+
+.tattoo-mini-gallery img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 /* Shop Page css*/
@@ -565,7 +666,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .filter-button {
-  background-color: #22092C;
+  background-color: #1b1b1b;
   color: #ffffff;
   padding: 15px 25px;
   font-size: 18px;
@@ -589,7 +690,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .sort-button {
   margin-left: 20%;
   font-size: 18px;
-  background-color: #22092C;
+  background-color: #1b1b1b;
   color: #ffffff;
   padding: 15px 25px;
   border: none;
@@ -640,20 +741,19 @@ select {
 .gallery-rect-2{
   border: 2px solid white;
   height: 40%;
-}
+} 
 
 .gallery-list-container{
-  width: 100%;
+  max-width: 100%;
 }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  justify-content: space-evenly;/* Adjust as needed */
+  max-width: 95%;
+  justify-content: center;/* Adjust as needed */
   margin-left: 2%;
   padding-top: 2%;
-  border-left: 2px solid white;
   border-top: 2px solid white;
 }
 
@@ -674,22 +774,41 @@ select {
 /* GalleryCard.css*/
 .gallery-card {
   display: flex;
-  max-width: calc(20% - 0px);
+  max-width: calc(20% - 20px); 
   max-height:auto;
-  
-  flex-direction: column;
   border: 1px solid #ddd; /* Add a border for separation */
   border-radius: 8px; /* Add some border radius for a softer look */
   overflow: hidden; /* Hide overflow for better image presentation */
-  margin: 10px; /* Add margin for spacing between cards */
+  margin: 2%; /* Add margin for spacing between cards */
   text-align: center;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  object-fit: cover;
+
+}
+
+.gallery-card:hover {
+  transform: scale(1.05); /* Increase the scale on hover (adjust the value as needed) */
+  z-index: 1; /* Ensure the hovered card appears on top of others */
+  max-width: 25%; 
+  object-fit: cover;
+  
 }
 
 .gallery-image {
-  width: 100%; /* Set the width of the image */
+  max-width: 100%; /* Set the width of the image */
   height: 350px; /* Maintain the aspect ratio of the image */
-  object-fit: cover;
+  object-fit:cover;
   background-color: white;
+  transition: transform 0.3s ease; 
+}
+
+.gallery-card:hover .gallery-image {
+ 
+ max-width:auto;
+ max-height:100%;
+ height: auto;
+ object-fit: contain;
+
 }
 
 .gallery-card a {
@@ -698,7 +817,7 @@ select {
 
 .gallery-info {
   flex: 1;
-  padding: 15px;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;

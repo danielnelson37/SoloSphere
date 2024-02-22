@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'; 
 
 export default function HomePage() {
-  const [currentImageIndex, setCurrentImageIndex ] = useState(0)
+const [currentImageIndex, setCurrentImageIndex ] = useState(0)
 const images = ['kirin.jpg', 'skeleton.jpg', 'angel.JPG', 'prophet.jpg', ];
 const location = useLocation();
 
@@ -31,7 +31,7 @@ return (
   </div>
   <div className="featured-art-content">
     <div className="featured-work-container">
-    <h2 className="rotate-text">Featured Work </h2>
+    <h2 className="rotate-text">Featured Work</h2>
     </div>
     <div className="mini-gallery">
       <img src = {`images/${images[currentImageIndex]}`} alt= {`Artwork ${currentImageIndex + 1}`} />

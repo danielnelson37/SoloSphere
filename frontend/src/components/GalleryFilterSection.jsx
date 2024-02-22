@@ -47,6 +47,7 @@ const GalleryFilterSection = ({ filters, setFilters, showFilters, setShowFilters
               <option value="Charcoal">Charcoal</option>
               <option value="Sculpture">Sculpture</option>
               <option value="Collage">Collage</option>
+              <option value="Website">Website</option>
             </select>
           </label>
         </div>

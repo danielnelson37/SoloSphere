@@ -596,7 +596,7 @@ const products = [
 
       {
         id: 51,
-        name: 'I be so confused I ain\'t hard to find/ Prophers',
+        name: 'I be so confused I ain\'t hard to find/ Prophets',
         date: 2019,
         collection: '',
         price: 100000,
@@ -677,6 +677,44 @@ const products = [
         dimensions: '24x18in',
         description: 'An exquisite sculpture to adorn your living space.',
       },
+
+      {
+        id: 58,
+        name: 'Second Wind',
+        date: 2023,
+        collection: '',
+        price: 0,
+        image: ['/images/secondwind.jpg', '/images/secondwind-1.jpg', '/images/secondwind-2.jpg', '/images/secondwind-3.jpg', '/images/secondwind-4.jpg'],
+        media: 'Website',
+        dimensions: '',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+      {
+        id: 59,
+        name: 'CareerSpring Interest Finder',
+        date: 2023,
+        collection: '',
+        price: 0,
+        image: ['/images/interestfinder.jpg'],
+        media: 'Website',
+        dimensions: '',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+      
+      {
+        id: 60,
+        name: 'METVoyager',
+        date: 2023,
+        collection: '',
+        price: 0,
+        image: ['/images/metvoyager.jpg'],
+        media: 'Website',
+        dimensions: '',
+        description: 'An exquisite sculpture to adorn your living space.',
+      },
+
+
 
 
 

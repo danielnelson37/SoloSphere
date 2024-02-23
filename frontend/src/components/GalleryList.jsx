@@ -6,8 +6,9 @@ import SortSection from './SortSection';
 import products from '../productsData';
 
 const itemsPerPage = 12;
+const maxButtonsToShow = 3;
 
-const GalleryList = ( { onPageChange }) => {
+const GalleryList = () => {
   const [filters, setFilters] = useState({
     date: 'all',
     media: 'all',
@@ -50,7 +51,6 @@ const GalleryList = ( { onPageChange }) => {
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    onPageChange(pageNumber);
   };
 
   const handleFilterChange = () => {
@@ -81,6 +81,28 @@ const GalleryList = ( { onPageChange }) => {
     window.scrollTo(0, 0);
   }, [currentPage]); // Run only on component mount
 
+  const renderPaginationButtons = () => {
+    const buttons = [];
+    const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
+
+    let startPage = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
+    let endPage = Math.min(totalPages, startPage + maxButtonsToShow - 1);
+
+    if (endPage - startPage + 1 < maxButtonsToShow) {
+      startPage = Math.max(1, endPage - maxButtonsToShow + 1);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      buttons.push(
+        <button key={i} onClick={() => handlePageChange(i)} className={currentPage === i ? 'active' : ''}>
+          {i}
+        </button>
+      );
+    }
+
+    return buttons;
+  };
+
   return (
     <div className="gallery-list-container">
       <div className="filter-search-row">
@@ -97,11 +119,12 @@ const GalleryList = ( { onPageChange }) => {
       </div>
 
       <div className="pagination">
-        {Array.from({ length: totalPages }).map((_, index) => (
+        {/* {Array.from({ length: totalPages }).map((_, index) => (
           <button key={index} onClick={() => handlePageChange(index + 1)} className={currentPage === index + 1 ? 'active' : ''}>
             {index + 1}
           </button>
-        ))}
+        ))} */}
+        {renderPaginationButtons()}
       </div>
     </div>
   );

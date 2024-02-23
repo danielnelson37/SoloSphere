@@ -21,13 +21,23 @@ const GalleryCard = ({ product }) => {
     //       bookmarkIcon.classList.add('bookmarked');
     //     }
     //   };
+
+    const hasVideo = product.video && product.video.length > 0;
   return (
     <div className="gallery-card">
     <Link to={`/gallery/${product.id}`}>
-    <img src={product.image[0]} alt={product.name} className="gallery-image" />
+    {hasVideo ? (
+          <video className="gallery-video" autoPlay width="300" loop>
+            <source src={product.video[0]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img src={product.image[0]} alt={product.name} className="gallery-image" />
+        )}
       <div className="gallery-info">
         <h3 className="gallery-name">{product.name}</h3>
         <h3 className="gallery-date">{product.date}</h3>
+        <p className="gallery-media">{product.media}</p>
         {/* Additional details if needed */}
         <div className="post-bookmarks">
         <FontAwesomeIcon icon={faBookmark} />

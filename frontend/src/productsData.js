@@ -1,4 +1,3 @@
-
 const products = [
     {
       id: 1,
@@ -11,6 +10,7 @@ const products = [
       dimensions: "3x3ft",
       description: 'A piece part of the “Black Dog” series using the motif of the black dog to illustrate the absurdity of the loyalty of suffering in life.',
     },
+
     {
       id: 2,
       name: 'When the soul breaks through the confines of its mortal frame',
@@ -22,7 +22,7 @@ const products = [
       dimensions: "24x18in",
       description: 'This artwork depicts contrasting versions of myself, with the older self situated in a taxi\'s passenger seat while the younger self occupies the backseat. The scene captures the tension between these two personas, as the older self, symbolizing the mortal frame tied to the physical realm, faces the younger self brandishing a silencer. The aging appearance of the older self serves as a poignant reminder of the inherent limitations in our existence, while the younger self embodies the intellectual aspect of the soul, fervently seeking to transcend the boundaries of the physical world and empirical knowledge, even at the cost of confronting its own limitations.',
     },
-    // Add more product entries as needed
+    
     {
         id: 3,
         name: 'SAP(FORTHESOUL)',

@@ -77,9 +77,6 @@ const GalleryList = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = applyFiltersAndSort().slice(indexOfFirstItem, indexOfLastItem);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [currentPage]); // Run only on component mount
 
   const renderPaginationButtons = () => {
     const buttons = [];
@@ -92,6 +89,14 @@ const GalleryList = () => {
       startPage = Math.max(1, endPage - maxButtonsToShow + 1);
     }
 
+    if (startPage > 1) {
+      buttons.push(
+        <button key="prev" onClick={() => handlePageChange(currentPage - 1)}>
+          &lt;
+        </button>
+      );
+    }
+
     for (let i = startPage; i <= endPage; i++) {
       buttons.push(
         <button key={i} onClick={() => handlePageChange(i)} className={currentPage === i ? 'active' : ''}>
@@ -100,8 +105,20 @@ const GalleryList = () => {
       );
     }
 
+    if (endPage < totalPages) {
+      buttons.push(
+        <button key="next" onClick={() => handlePageChange(currentPage + 1)}>
+          &gt;
+        </button>
+      );
+    }
+
     return buttons;
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   return (
     <div className="gallery-list-container">
@@ -119,11 +136,6 @@ const GalleryList = () => {
       </div>
 
       <div className="pagination">
-        {/* {Array.from({ length: totalPages }).map((_, index) => (
-          <button key={index} onClick={() => handlePageChange(index + 1)} className={currentPage === index + 1 ? 'active' : ''}>
-            {index + 1}
-          </button>
-        ))} */}
         {renderPaginationButtons()}
       </div>
     </div>

@@ -1,12 +1,4 @@
 
-/* @font-face {
-  font-family: 'skratch_punkregular';
-  src: url('/fonts/skratch_punk-webfont.woff2') format('woff2'),
-       url('/fonts/skratch_punk-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-} */
 
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -168,11 +160,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .featured-art-content {
+  border-top: 2px white solid;
+  padding-top:2%;
   display: flex;
   flex-direction: row; /* Arrange items in a row */
   align-items: center;
   justify-content: space-between;
-  margin-top: 5%; /* Add margin as needed */
+  margin-top: 10%; /* Add margin as needed */
 }
 
 .featured-work-container{
@@ -226,7 +220,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .detailed-bio {
   display: flex;
   flex-direction: column;
-  border-left: 2px solid white;
   margin-left: 2%;
 }
 
@@ -277,6 +270,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   max-width: 95%;
   margin: 0 auto;
 }
+
 .about-header h1{
   font-size: 3em;
   width: 55%;
@@ -299,7 +293,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .about-header p{
   font-size:.8em;
   color: white;
-  margin-right:30% !important;
+  margin-right:27% !important;
   padding: 2%;
   padding-left: 5%;
 }
@@ -307,9 +301,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .about-row-1{
   display: flex;
-  max-width: 92%;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: -5%;
+  border-top: 2px white solid;
 }
 
 .introduction {
@@ -318,6 +313,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   height: auto;
   overflow: hidden;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .introduction h2{
@@ -365,14 +362,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .philosophy-inspiration-container{
-  max-width: 60%;
-  align-items: flex-end;
-  margin: auto;
-  margin-bottom: 11% !important;
+  max-width: 50%;
+  margin-bottom: 3%;
   margin-left: 2%;
+  margin-right: 5%;
   padding-left: 4%;
   border-left: 2px solid white;
-  
 }
 
 .artistic-philosophy h2{
@@ -385,14 +380,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .rect-container{
   display: flex;
   max-width: 100%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 
 .rect-1{
   background-color: white;
   width: 40%;
-  height: 23px;
+  height: 23.5px;
   margin-right: 1%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .rect-2{
@@ -400,6 +398,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   width: 60%;
   height: 20px;
   margin-right: -30%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
@@ -429,12 +429,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .about-row-2{
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: 2%;
+  max-width: 100%;
+  margin: 2% auto;
   padding-left: 2%;
-  border-left: 2px solid white;
   border-radius: 1px;
+  border-top: 2px solid white;
 }
 
 .about-row-2 h2 {
@@ -445,7 +444,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
   max-width: 20%;
-  margin-right: 5%;
+  margin: auto 3%;
 }
 
 .beyond-column p{
@@ -457,13 +456,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   justify-content: space-between;
   margin-top: 2%; /* Adjust as needed */
   max-height: 100%;
+  margin-right: 3%;
  
 }
 
 .image-with-description {
   position: relative;
   max-width: 45%; /* Adjust as needed */
-  margin-right: 2%;
+  margin-right: 1%;
 }
 
 .image-with-description img {
@@ -476,7 +476,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .image-with-description p {
   position: absolute;
-  width: 80%;
+  width: 95%;
   top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -489,7 +489,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
 }
@@ -502,55 +502,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.digital-tools{
-  max-width: 100%;
-  writing-mode: vertical-lr; /* Rotate text vertically from left to right */
-  margin: auto 0;
-  margin-left:-2%;
-  color: white; /* Adjust the color as needed */
-  background-color: black;
-  padding: 10% 0;
-  border-radius: 90px;
-  margin-left: 2%;
-  margin-right: 2%;
+.about-row-3 {
+  border-top: 2px white solid;
 }
-
-
-.row-of-circles-2{
-  display: flex;
-  max-width: 9%;
-  justify-content:space-between;
-  margin: 2% auto;
-}
-
-.bordered-circle-1-2, .bordered-circle-2-2, .bordered-circle-3-2{
-  width: 20px; /* Set the width of the circle */
-  height: 20px; /* Set the height of the circle */
-  border-radius: 50%; /* Create a circle using border-radius */
-  border: 2px solid #333; /* Set the border color and width */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem; /* Adjust font size as needed */
-  font-weight: bold;
-  color: #333; /* Set text color */
-  text-align: center;
-}
-
-.bordered-circle-2-2{
-  background-color: black;
-  border: none;
-  width: 22px;
-  height: 22px;
-}
-
 
 
 .upcoming-projects{
-  max-width: 88%;
-  margin: 0 auto;
-  border-left: 2px solid white;
-  padding: 2%;
+  max-width: 100%;
+  margin: auto 2%;
+  padding: 0 2%;
 }
 
 .upcoming-projects p {
@@ -566,13 +526,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 30px;
 }
 
-
-
 .chrome-text{
   max-width: 40%;
-  margin: auto;
-  padding-left: 3.5%;
-  border-left: 2px solid white;
+  margin: auto 4%;
 }
 
 .chrome-mini-gallery{
@@ -586,19 +542,30 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .tattoo-container{
   display: flex;
-  margin-top:2%;
-
+  max-width: 100%;
 }
 
 .tattoo-mini-gallery{
-  padding-left: 2%;
+  display: flex;
+  max-width: 100%;
+}
+
+.image-column-1{
+  display: flex;
+  width: 100%;
+}
+
+.image-column-2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
 .tattoo-text {
-  max-width: 50%;
-  margin: auto 0;
-  border-right: 2px solid white;
-  padding-right: 3%;
+  max-width: 37%;
+  margin: auto 2%;
+  padding-right: 1%;
   
 }
 
@@ -639,6 +606,40 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 10px;
 }
 
+.contact-container{
+  max-width: 100%;
+  display: flex;
+  border-top: 2px white solid;
+  padding: 2% 0;
+}
+
+.contact-container h2{
+  font-size:30px;
+
+}
+
+.contact-information-container{
+  width: 40%;
+  margin: auto ;
+  padding: 13.5% 5%;
+  text-align: center;
+  color: white;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+}
+
+.contact-information-container a{
+  text-decoration: none;
+  color: white;
+}
+
+.contact-img img{
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 10%;
+}
+
 /* Shop Page css*/
 .product-list-container {
   width: 100%;
@@ -654,15 +655,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .search-bar{
   margin-top: 1.5%;
   width: 55%;
-  margin-right:5%;
+  margin-right: 3%;
+  
 }
 
 .search-bar-input{
-  width: 100%;
-  padding: 2%;
+  width: 97%;
+  padding: 3%;
   background: white;
-  border-radius: 30px;
+  border-radius: 40px;
   border: none;
+  font-size: 18px;
 }
 
 .filter-button {
@@ -717,34 +720,8 @@ select {
 } 
 
 /* Gallery.css */
-.gallery{
-  display: flex;
-}
-
-
-.gallery-rect-column{
-  display: flex;
-  flex-direction: column;
-  max-width: 10%;
-  margin-left: 2%;
-  margin-top: 13%;
-
-}
-
-.gallery-rect-1{
-  background-color: white;
-  height: 60%;
-  width: 20px;
-  margin-bottom: 30%;
-}
-
-.gallery-rect-2{
-  border: 2px solid white;
-  height: 40%;
-} 
-
 .gallery-list-container{
-  width: 100%;
+  max-width: 100%;
 }
 
 .gallery-list {
@@ -752,7 +729,6 @@ select {
   flex-wrap: wrap;
   max-width: 100%;
   justify-content: center;/* Adjust as needed */
-  margin-left: 2%;
   padding-top: 2%;
   border-top: 2px solid white;
 }
@@ -764,10 +740,11 @@ select {
   background-color: black;
   color: white;
   margin-right: 2%;
-  margin-left: -10%;
+  margin-left: -8%;
   background-color: black;
   padding: 2%;
   padding-left: 10%;
+  padding-right: 4%;
   border-radius: 60px;
 }
 
@@ -776,6 +753,7 @@ select {
   display: flex;
   max-width: calc(20% - 30px); 
   max-height:auto;
+  background-color: #1b1b1b;
   border: 1px solid #ddd; /* Add a border for separation */
   border-radius: 8px; /* Add some border radius for a softer look */
   overflow: hidden; /* Hide overflow for better image presentation */
@@ -845,24 +823,22 @@ select {
   font-size: 1.5rem; /* Set the font size for the product name */
   margin-bottom: 10px; /* Add margin between product name and description */
   text-decoration: none;
-  color: #333; /* Set a color for the product name */
+  color: white; /* Set a color for the product name */
   text-align: center;
   
 }
 
 .gallery-date {
-  color: #333; /* Set a color for the product name */
+  color: white; /* Set a color for the product name */
   font-size: 1.25rem;
   margin-top: -1%;
 }
 
 .gallery-media {
-  color: #333; /* Set a color for the product name */
+  color: white; /* Set a color for the product name */
   font-size: 1.1rem;
   margin-top: -2.5%;
 }
-
-
 
 .pagination {
   display: flex;

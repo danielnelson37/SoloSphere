@@ -52,7 +52,7 @@ const products = [
         date: 2022,
         collection: 'Black Dog',
         price: 1000,
-        image: ['/videos/adiviuat.MP4','/images/angel.JPG'],
+        image: ['/images/angel.JPG'],
         media: 'Graphite on paper, digital collage',
         dimensions: '30x40in',
         description: 'A piece part of the “Black Dog” series using the motif of the black dog to illustrate the absurdity of the loyalty of suffering in life.',

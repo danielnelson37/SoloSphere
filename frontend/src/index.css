@@ -112,7 +112,7 @@ button:active {
 
 
 .landingpage-title{
-  font-size: 11em; /* Adjust the font size */
+  font-size: 9em; /* Adjust the font size */
   margin-bottom: 30%; /* Adjust margin as needed */
   color: white;
 }
@@ -126,7 +126,7 @@ button:active {
 
 .content {
  position: absolute;
- top: 33%;
+ top: 30%;
  left: 50%;
  transform: translate(-50%, -50%);
 
@@ -135,8 +135,8 @@ button:active {
 .tagline{
   text-align: right;
   position: relative;
-  right: 13%;
-  top: -300px;
+  right: 7.5%;
+  top: -240px;
   font-size: 40px;
   font-weight: 500;
   color:#ffffff
@@ -147,11 +147,11 @@ h1 span::before {
   content: ''; /* Empty content */
   position: absolute;
   display: block;
-  width: 590px; /* Adjust the width of the circle */
-  height: 590px; /* Adjust the height of the circle */
+  width: 530px; /* Adjust the width of the circle */
+  height: 530px; /* Adjust the height of the circle */
   border-radius: 50%; /* Create a circular shape */
   top: -50px; /* Adjust the vertical position */
-  left: 68%; /* Center horizontally */
+  left: 69%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust to center precisely */
   z-index: -1; /* Place behind the text */
 background: rgba(255, 255, 255, 0.2);

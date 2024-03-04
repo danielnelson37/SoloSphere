@@ -20,7 +20,7 @@ const products = [
       image: ['/images/nihilist.jpg', '/images/nihilist-1.jpg', '/images/nihilistwarm.jpg'],
       media: 'Graphite, acrylic, marker on paper, digital collage',
       dimensions: "24x18in",
-      description: 'This artwork depicts contrasting versions of myself, with the older self situated in a taxi\'s passenger seat while the younger self occupies the backseat. The scene captures the tension between these two personas, as the older self, symbolizing the mortal frame tied to the physical realm, faces the younger self brandishing a silencer. The aging appearance of the older self serves as a poignant reminder of the inherent limitations in our existence, while the younger self embodies the intellectual aspect of the soul, fervently seeking to transcend the boundaries of the physical world and empirical knowledge, even at the cost of confronting its own limitations.',
+      description: 'This captivating artwork portrays a dichotomy of selves, with the elder positioned in a taxi\'s front seat and the younger self in the back, illustrating the poignant tension between mortal physicality and intellectual aspirations. The older self, a symbol of the earthly constraints, confronts the youthful self wielding a silencer, embodying the ceaseless pursuit of transcending worldly limits. As the aged visage signifies the inherent boundaries of our existence, the younger self becomes a symbol of the relentless quest for enlightenment, showcasing the perpetual struggle to overcome the limitations of the physical realm and embrace the boundless realm of intellectual exploration.',
     },
     
     {
@@ -29,10 +29,10 @@ const products = [
         date: 2022,
         collection: '',
         price: 10000,
-        image: ['/images/SAP.JPG'],
+        image: ['/videos/SAP.mp4', '/images/SAP.JPG'],
         media: '3D model sculpture, PIR motion sensor, DFPlayer, SD card, jumper wires, arduino uno',
         dimensions: "9x10x4in",
-        description: 'Distorted sculpture of an African plaque that speaks using PIR motion sensor and arduino programming within the model. The speech generated is about existential and absurdist ideas that comes from a compilation of written words by Jean-Paul Sartre, Albert Camus and myself altered by text to speech software.',
+        description: '"SAP(FORTHESOUL)" is a multimedia art piece conceived during my sophomore year at Parsons School of Design. Utilizing AutoCAD, I crafted a 3D sculpture inspired by African plaques. The sculpture incorporates Arduino technology, employing a PIR motion sensor and DFPlayer with an SD card, to dynamically generate speeches exploring existential and absurdist themes. The spoken words, a compilation of writings by Jean-Paul Sartre, Albert Camus, and my own alterations, are transformed into speech through text-to-speech software, creating an immersive and thought-provoking experience within the 9x10x4in dimensions of the artwork.',
       },
 
       {
@@ -52,7 +52,7 @@ const products = [
         date: 2022,
         collection: 'Black Dog',
         price: 1000,
-        image: ['/images/angel.JPG'],
+        image: ['/videos/adiviuat.MP4','/images/angel.JPG'],
         media: 'Graphite on paper, digital collage',
         dimensions: '30x40in',
         description: 'A piece part of the “Black Dog” series using the motif of the black dog to illustrate the absurdity of the loyalty of suffering in life.',
@@ -79,7 +79,7 @@ const products = [
         image: ['/images/skeleton.jpg'],
         media:'Graphic, charcoal and conte crayon on paper',
         dimensions: "18x24in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '"Divinity in Hollowness", finished in 2024, explores the convergence of life and death through a haunting portrayal of a zombie-angel hybrid with a radiant cross on its forehead and four arms – symbolizing the struggle for divinity amid the desolation of existence. Rendered in graphic, charcoal, and conte crayon on paper, the 18x24in piece captures a desolate scene of decay along an empty river, where a decaying figure is haunted by the otherworldly presence. This piece evokes themes of  accepting one\'s hollowness, confronting the loss of self, and seeking transcendence in the void, welcoming viewers to reflect on the intersection of spirituality and mortality.',
       },
 
       {
@@ -103,7 +103,7 @@ const products = [
         image: ['/images/blackcat.jpg'],
         media: "Acrylic and oil on paper",
         dimensions: "9x12in",
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '"L\'homme noir et le chat," created in 2019 with acrylic and oil on paper, measures 9x12 inches. This artwork explores the complexity of subtle racial undertones within societal dynamics. Through the juxtaposition of a black man in a ski mask and a black cat with human-like eyes, the painting prompts reflection on the dehumanizing gaze and the awkward interplay between the two subjects.',
       },
 
       {
@@ -127,7 +127,7 @@ const products = [
         image: ['/images/bill.jpg'],
         media: 'Collage on paper, digital',
         dimensions: '8.5x11in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '',
       },
 
       {
@@ -139,7 +139,7 @@ const products = [
         image: ['/images/cloak.jpg'],
         media: 'Collage on paper, digital',
         dimensions: '8.5x11in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '',
       },
 
       {
@@ -163,7 +163,7 @@ const products = [
         image: ['/images/godspeed.JPG'],
         media: 'Oil, acrylic, collage, charcoal, and fabric on canvas',
         dimensions: "18x24in",
-        description: 'The multimedia artwork portrays a tender moment between myself as a toddler and my father, drawing parallels between Western Americana Cowboy culture and my father\'s characteristics. Through the inclusion of black figures and religious symbolism, such as the rope acting as a halo, the piece reflects the empowerment and values instilled by my father within a cultural context often overlooked. Despite emotional absence, the subtle expressions of love through color and composition underscore the enduring connections and unique expressions of affection within the piece.',
+        description: 'The multimedia artwork portrays a moment between myself as a toddler and my father, drawing parallels between Western Americana Cowboy culture and my father\'s characteristics. Through the inclusion of black figures and religious symbolism, such as the rope acting as a halo, the piece reflects the empowerment and values instilled by my father within a cultural context often overlooked. Despite emotional absence, the subtle expressions of love through color and composition underscore the enduring connections and unique expressions of affection within the piece.',
       },
 
       {
@@ -175,7 +175,7 @@ const products = [
         image: ['/images/painter.JPG'],
         media: 'Collage on paper, digital',
         dimensions: '8.5x11in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '',
       },
 
       {
@@ -187,7 +187,7 @@ const products = [
         image: ['/images/wineglass.jpg'],
         media: 'Acrylic on paper',
         dimensions: '9x12in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '"Transparent," created in 2019, is an acrylic on paper artwork measuring 9x12 inches. This composition features a still life arrangement of a wine bottle, wine glass, and a candle, serving as a metaphorical exploration of emotional transparency. The delicate interplay of light and shadow in this piece mirrors the vulnerability and openness one experiences when embracing a transparent state of being, inviting viewers to reflect on the subtle nuances of human connection.',
       },
 
       {
@@ -199,7 +199,7 @@ const products = [
         image: ['/images/sunday.jpg'],
         media: 'Oil, acrylic, fabric on canvas, and digital collage',
         dimensions: '18x24in',
-        description: 'The multimedia artwork portrays a tender moment between myself as a toddler and my mother, delving into themes of religion, family dynamics, culture, and shared history. Through the symbolism of the burning bush, the piece encapsulates my mother\'s profound belief in me, reminiscent of the biblical narrative of Moses leading the Israelites. Despite occasional miscommunication, represented through the fragmented style, the artwork emphasizes the enduring strength of our familial bond and the profound influence of our shared past on shaping our identities.',
+        description: 'The multimedia artwork portrays a moment between myself as a toddler and my mother, delving into themes of religion, family dynamics, culture, and shared history. Through the symbolism of the burning bush, the piece encapsulates my mother\'s profound belief in me, reminiscent of the biblical narrative of Moses leading the Israelites. Despite occasional miscommunication, represented through the fragmented style, the artwork emphasizes the enduring strength of our familial bond and the profound influence of our shared past on shaping our identities.',
       },
 
       {
@@ -235,7 +235,7 @@ const products = [
         image: ['/images/infinitum.jpg'],
         media: 'Charcoal, marker, and acrylic on canvas',
         dimensions: "8x11in",
-        description: 'This mixed-media artwork explores existential questions through its portrayal of a man with his subconscious holding a gun to its mouth, symbolizing the uncertainty and complexities of existence. The artist represents the ambiguity of identity by shaping the body with lines and shapes, creating a sense of hollowness. The inclusion of mirrored shapes conveys the duality and interconnectedness of life, while the textured acrylic and charcoal elements depict the enigmatic nature of space and the attempt to capture the four-dimensional aspects, ultimately questioning the finite nature of consciousness even   after death.',
+        description: 'In this mixed media piece, the artist explores the enigma of existence, shaping the figure with a line and geometric forms to convey a sense of hollowness and ambiguity. Mirrored shapes symbolize the dualities and intersections of life, prompting reflection on the uncertainties surrounding identity. By incorporating textures that evoke the vastness of space, the artwork delves into the unknown aspects of both ourselves and the universe, culminating in a thought-provoking representation of a subconscious holding a gun – a poignant inquiry into the fate of consciousness after death and the profound question of our finiteness.',
       },
 
       {
@@ -247,7 +247,7 @@ const products = [
         image: ['/images/anti.jpg'],
         media: 'photography and digital print',
         dimensions: '8.5x11in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: 'In "Anti," created in 2019 through the medium of photography and digital print with dimensions of 8.5x11 inches, the artist captures a poignant narrative surrounding substance abuse. The spilled pills serve as a visual metaphor for the scattered consequences of addiction, while the overlaid image of a bloody sink intensifies the raw and visceral impact, addressing the physical toll and personal struggle associated with substance misuse. This piece prompts reflection on the destructive nature of substance abuse and fosters a dialogue on the urgent need for empathy and support in combating this pervasive issue.',
       },
 
       {
@@ -259,7 +259,7 @@ const products = [
         image: ['/images/beachside.JPG'],
         media: 'digital print',
         dimensions: '8.5x11in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '',
       },
 
       {
@@ -271,7 +271,7 @@ const products = [
         image: ['/images/exit.JPG'],
         media: 'photography and digital print',
         dimensions: '8.5x11in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '',
       },
 
       {
@@ -283,7 +283,7 @@ const products = [
         image: ['/images/seul-2.JPG'],
         media: 'photography and digital print',
         dimensions: '18x24in',
-        description: 'An exquisite sculpture to adorn your living space.',
+        description: '',
       },
 
       {
@@ -419,7 +419,7 @@ const products = [
         date: 2022,
         collection: '',
         price: 15000,
-        image: ['/images/mene.jpg', '/images/soulowarm.jpg', '/images/soulored.jpg', '/images/souloyellow.jpg'],
+        image: ['/images/mene.jpg'],
         media: 'Graphite and collage on paper, digital collage',
         dimensions: '18x24in',
         description: 'An exquisite sculpture to adorn your living space.',
@@ -455,7 +455,7 @@ const products = [
         date: 2020,
         collection: '',
         price: 4000,
-        image: ['/images/SOLO-02-0.JPG', '/images/SOLO-02-1.JPG', '/images/SOLO-02-2.JPG'],
+        image: ['/images/SOLO-02-0.JPG', '/images/SOLO-02-1.jpg', '/images/SOLO-02-2.jpg'],
         media: 'Graphite, marker, collage on paper, Digital collage print',
         dimensions: '11x14in',
         description: 'An exquisite sculpture to adorn your living space.',
@@ -515,8 +515,7 @@ const products = [
         date: 2019,
         collection: '',
         price: 100000,
-        image: ['/images/opia-1.jpg', '/images/opia-2.JPG'],
-        video: ['/videos/opia.MP4'],
+        image: ['/videos/opia.MP4','/images/opia-1.jpg', '/images/opia-2.JPG'],
         media: 'Digital print',
         dimensions: '16x16in',
         description: 'An exquisite sculpture to adorn your living space.',
@@ -697,7 +696,7 @@ const products = [
         date: 2023,
         collection: '',
         price: 0,
-        image: ['/images/interestfinder.jpg'],
+        image: ['/images/careerspring.jpg', '/images/careerspring-1.jpg', '/images/careerspring-2.jpg', '/images/careerspring-3.jpg'],
         media: 'Website Development',
         dimensions: '',
         description: 'An exquisite sculpture to adorn your living space.',
@@ -709,7 +708,7 @@ const products = [
         date: 2023,
         collection: '',
         price: 0,
-        image: ['/images/metvoyager.jpg'],
+        image: ['/images/metvoyager.jpg', '/images/metvoyager-1.jpg', '/images/metvoyager-2.jpg'],
         media: 'Website Development',
         dimensions: '',
         description: 'An exquisite sculpture to adorn your living space.',
@@ -835,11 +834,18 @@ const products = [
         description: 'A short comic, about a cat named Lou who doesn\'t give a cat\'s ass about anything.',
       },
 
+      {
+        id: 71,
+        name: 'Death of a Rasta',
+        date: 2022,
+        collection: '',
+        price: 250000,
+        image: ['/videos/rip.mp4'],
+        media: 'Found media, fire, acrylic, charcoal, and charcoal on cardboard',
+        dimensions: '46x34in',
+        description: '',
+      },
 
-
-
-
-      
   ];
   
   export default products;

@@ -24,7 +24,10 @@ useEffect (() => {
 
 return (
   <div className="home-page">
-      <img src="images/RBFWC-0.JPG" alt="Description" className="landingpage-image" />
+      <video className="landingpage-image" autoPlay width="auto" loop >
+            <source src='/videos/intro.mp4' type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
   <div className="content">
     <h1 className="landingpage-title"><span>SOLI</span>SPHERE</h1>
     <p className="tagline">Illuminating Shadows</p>

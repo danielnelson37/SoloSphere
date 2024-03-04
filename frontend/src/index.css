@@ -114,6 +114,7 @@ button:active {
 .landingpage-title{
   font-size: 11em; /* Adjust the font size */
   margin-bottom: 30%; /* Adjust margin as needed */
+  color: white;
 }
 
 .landingpage-image {
@@ -138,6 +139,7 @@ button:active {
   top: -300px;
   font-size: 40px;
   font-weight: 500;
+  color:#ffffff
   
 }
 
@@ -527,8 +529,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .chrome-text{
-  max-width: 40%;
-  margin: auto 4%;
+  max-width: 50%;
+  margin: auto 5%;
 }
 
 .chrome-mini-gallery{
@@ -662,6 +664,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .search-bar-input{
   width: 97%;
   padding: 3%;
+  padding-top: 3.5%;
   background: white;
   border-radius: 40px;
   border: none;
@@ -750,6 +753,7 @@ select {
 
 /* GalleryCard.css*/
 .gallery-card {
+  position: relative;
   display: flex;
   max-width: calc(20% - 30px); 
   max-height:auto;
@@ -765,13 +769,12 @@ select {
 }
 
 .gallery-card:hover {
-  transform: scale(1); /* Increase the scale on hover (adjust the value as needed) */
+  transform: scale(1.1); /* Increase the scale on hover (adjust the value as needed) */
   z-index: 1; /* Ensure the hovered card appears on top of others */
-  max-width: 25%; 
+  max-width: 20%; 
   
 }
 
-/* Add this to your CSS stylesheet */
 .gallery-video {
   max-width: 100%;
   height: 100%;
@@ -796,6 +799,20 @@ select {
   transition: transform 0.3s ease; 
 }
 
+.gallery-bookmarks{
+  font-size: 40px;
+  margin-right: 5%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.gallery-bookmarks:hover{
+  color:#F05941;
+}
 .gallery-card:hover .gallery-image {
  max-width:auto;
  max-height:100%;
@@ -864,27 +881,43 @@ select {
   background-color: #fff;
 }
 
+.gallery-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-bookmarks {
+  color:#22092C;
+  font-size: 40px;
+  margin-right: 5%;
+}
+
+.post-bookmarks:hover{
+  color:#F05941;
+}
+
 .back-button {
   max-width: 25%;
-  padding: 1.5% 1%;
+  padding: 2%;
   margin: 2% 5%;
   color: white;
   border-radius: 10px;
-  background-color: #22092C;
-  font-size: 14px;
+  background-color: #1b1b1b;
+  font-size: 18px;
 }
 
 .details-container {
   display: flex;
   flex-direction: column;
-  margin: 1% auto;
+  margin: auto;
+  margin-bottom: 2%;
   
 }
 
 .details-section {
   display: flex; 
-  margin: 0 auto;
-  margin-left: 5%;
+  margin: 0 2%;
 }
 
 .details-title{
@@ -896,13 +929,13 @@ select {
 
 .image-section {  
   max-width: 100%;
-  margin: auto;
+  margin-right: auto;
   text-align: center;
 }
 
 .image-section img {
-  max-width: 50%; /* Adjust the max-width to scale the image down */
-  max-height: 10%; /* Adjust the max-height to scale the image down */
+  max-width: 100%; /* Adjust the max-width to scale the image down */
+  max-height: 600px; /* Adjust the max-height to scale the image down */
   object-fit: cover; /* Use contain to maintain aspect ratio */
   margin: 0 auto; 
 }
@@ -912,9 +945,9 @@ select {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 2%;
 }
 
-/* Add these styles to your existing CSS */
 
 .thumbnail-row {
   display: flex;
@@ -923,14 +956,26 @@ select {
   margin-top: 2%;
 }
 
+
+
 .thumbnail {
   max-width: 50px; /* Adjust the max-width of each thumbnail */
   max-height: 50px; /* Adjust the max-height of each thumbnail */
   margin: 1% 2%;
   cursor: pointer;
+  overflow: hidden;
   border: 2px solid #22092C; /* Border color for unselected thumbnails */
   border-radius: 5px;
   transition: border-color 0.3s;
+  position: relative; /* Ensure proper positioning */
+}
+
+.thumbnail img,
+.thumbnail video {
+  width: 100%; /* Make sure images and videos fill the entire thumbnail */
+  height: 100%; /* Make sure images and videos fill the entire thumbnail */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire thumbnail */
+  
 }
 
 
@@ -943,23 +988,6 @@ select {
   border-color: #F05941; /* Border color on hover */
 }
 
-.gallery-bio {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 5%;
-  margin-bottom: 2%;
-}
-
-.post-bookmarks {
-  color:#22092C;
-}
-
-.post-bookmarks:hover{
-  color:#F05941;
-}
 
 
 /* ProductCard.css */
